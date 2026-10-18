@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pharma-diploma:module-result:1.0.0",
+  "title": "module-result",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "module_id": {
+      "type": "string",
+      "pattern": "^M(0[1-9]|1[0-9])$"
+    },
+    "workspace_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "execution_status": {
+      "type": "string",
+      "enum": [
+        "succeeded",
+        "partial",
+        "blocked",
+        "failed"
+      ]
+    },
+    "scientific_status": {
+      "type": "string",
+      "enum": [
+        "supported",
+        "uncertain",
+        "predicted",
+        "undetermined",
+        "out_of_domain",
+        "not_applicable"
+      ]
+    },
+    "input_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "output_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "info",
+              "warning",
+              "critical"
+            ]
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "severity"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "missing_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "tool_versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "schema_version",
+    "module_id",
+    "workspace_id",
+    "case_revision_id",
+    "run_id",
+    "execution_status",
+    "scientific_status",
+    "input_refs",
+    "output_refs",
+    "evidence_refs",
+    "warnings",
+    "missing_inputs",
+    "tool_versions",
+    "policy_version",
+    "created_at",
+    "content_hash"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "execution_status": {
+            "enum": [
+              "succeeded",
+              "partial"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "output_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "scientific_status": {
+            "const": "supported"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "predicted_label": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "enum": [
+        0,
+        1,
+        null
+      ]
+    },
+    "abstention_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "record_id",
+    "predicted_label",
+    "abstention_reason"
+  ],
+  "additionalProperties": false
+}

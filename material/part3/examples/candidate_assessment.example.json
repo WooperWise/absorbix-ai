@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "assessment_id": "ASSESSMENT-FIXTURE-001",
+  "workspace_id": "WS-DEMO",
+  "case_revision_id": "CASE-DEMO-001-R1",
+  "candidate_revision_id": "CANDIDATE-FIXTURE-R1",
+  "strategy_definition_ref": "STRATEGY-FIXTURE-R1",
+  "checks": [
+    {
+      "check_id": "CHECK-COMPOSITION",
+      "rule_kind": "formulation_evidence",
+      "rule_ref": "fixture-rule-composition-required",
+      "constraint_level": "advisory",
+      "verdict": "unknown",
+      "rationale": "Отсутствуют конкретный продукт и количества компонентов.",
+      "evidence_refs": []
+    }
+  ],
+  "eligibility": "insufficient_data",
+  "expected_effect": {
+    "endpoint": "exposure_change",
+    "status": "not_quantified",
+    "description": "Оценка величины изменения не выполнялась.",
+    "basis_refs": []
+  },
+  "next_checks": [
+    "Определить продукт, дозу и количественный состав."
+  ],
+  "created_at": "2026-10-18T00:00:00Z"
+}

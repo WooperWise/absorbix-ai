@@ -1,0 +1,385 @@
+[
+  {
+    "card_id": "card:A01",
+    "path": "evidence/cards/A01.md",
+    "source_id": "L01",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "12f70f56d798cb56ea9ebb00cb609d4146490aad1655ec9237bea6ab8cbe0e2c",
+    "source_locator": "Clinical Pharmacology / Absorption; Warnings / Interchangeability",
+    "fact_ids": [
+      "A01.F1",
+      "A01.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A02",
+    "path": "evidence/cards/A02.md",
+    "source_id": "L02",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "0dc8ec1c90bf11dffede925b2af21992ab49ffb99f54deef29c0a978462b2b94",
+    "source_locator": "2.1; 2.9; product panel",
+    "fact_ids": [
+      "A02.F1",
+      "A02.F2"
+    ],
+    "observation_ids": [
+      "A02.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A03",
+    "path": "evidence/cards/A03.md",
+    "source_id": "L03",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "558d2d0e7dfe8283a7c8af34214bbdf74d0693e35391abca7c8d8267d30fe3ec",
+    "source_locator": "Clinical Pharmacology / Absorption",
+    "fact_ids": [
+      "A03.F1",
+      "A03.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A04",
+    "path": "evidence/cards/A04.md",
+    "source_id": "L04",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "dc93d4cc961bbacbf051b17e320b8db43f4e607d9d69bee340b28dd6522781f5",
+    "source_locator": "12.3 Absorption",
+    "fact_ids": [
+      "A04.F1",
+      "A04.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A05",
+    "path": "evidence/cards/A05.md",
+    "source_id": "L05",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "6908600dcc83188e5813c6d35e34a37bebbcb2e1b866f6c7960370044e9981ed",
+    "source_locator": "12.3 / Effect of Food",
+    "fact_ids": [
+      "A05.F1",
+      "A05.F2"
+    ],
+    "observation_ids": [
+      "A05.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A06",
+    "path": "evidence/cards/A06.md",
+    "source_id": "L06",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "0c8b781c11f86e87ae7c7d9eb9e0883e1aca040339e614289cdafecda0cc0fb2",
+    "source_locator": "7.10; 12.3 Absorption",
+    "fact_ids": [
+      "A06.F1",
+      "A06.F2"
+    ],
+    "observation_ids": [
+      "A06.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A07",
+    "path": "evidence/cards/A07.md",
+    "source_id": "L07",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "5cbbc346e2b10a2a5ba1c96e4f35be875f817ae6013f98a9ca33b76ed1f1e694",
+    "source_locator": "2.3 / Administration Information",
+    "fact_ids": [
+      "A07.F1",
+      "A07.F2"
+    ],
+    "observation_ids": [
+      "A07.N1",
+      "A07.N2"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A08",
+    "path": "evidence/cards/A08.md",
+    "source_id": "L08",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "4617172d9cc2f399d06f8c898ec2063c63c0a271d62abee46df5b3f60f30c14e",
+    "source_locator": "Summary / Product Labeling",
+    "fact_ids": [
+      "A08.F1",
+      "A08.F2"
+    ],
+    "observation_ids": [
+      "A08.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A09",
+    "path": "evidence/cards/A09.md",
+    "source_id": "L09",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "7e3138e572f180270888c5fa31c7e0577b8c4e382df70b154c4e486b893cadb7",
+    "source_locator": "11 Description; 12.3 Pharmacokinetics",
+    "fact_ids": [
+      "A09.F1",
+      "A09.F2"
+    ],
+    "observation_ids": [
+      "A09.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A10",
+    "path": "evidence/cards/A10.md",
+    "source_id": "L10",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "d630c4130a45a8a8848a3b97c35c5c5cbf7534fe30f10685f36854af004e6486",
+    "source_locator": "Clinical Pharmacology / Absorption; Pediatric dosage",
+    "fact_ids": [
+      "A10.F1",
+      "A10.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A11",
+    "path": "evidence/cards/A11.md",
+    "source_id": "L11",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "5911790f92f9303c97cacf44f1b3079603b316b943c57163aa2b6f0498fe62f9",
+    "source_locator": "2.4 / With Multivalent Cations and With Dairy Products",
+    "fact_ids": [
+      "A11.F1",
+      "A11.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A12",
+    "path": "evidence/cards/A12.md",
+    "source_id": "L12",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "19eed75e9f95af4ccd345fdb7d23449a32b9f695f2d0b7b073ac9c9af50f6e26",
+    "source_locator": "12.3 Absorption",
+    "fact_ids": [
+      "A12.F1",
+      "A12.F2"
+    ],
+    "observation_ids": [
+      "A12.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A13",
+    "path": "evidence/cards/A13.md",
+    "source_id": "L13",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "b755869fa4ffc97ca57c18e656c8cd9d567f9e20913ae95461d874dfb2c19e83",
+    "source_locator": "2.1; 5.3",
+    "fact_ids": [
+      "A13.F1",
+      "A13.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A14",
+    "path": "evidence/cards/A14.md",
+    "source_id": "L14",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "4fa1474045eec28c36c8bd798a2fdbe45873f623bbbb9474938b9b9d902147e5",
+    "source_locator": "2.1; 7.7",
+    "fact_ids": [
+      "A14.F1",
+      "A14.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A15",
+    "path": "evidence/cards/A15.md",
+    "source_id": "L15",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "103bfefa1a6a376a51bebc7f50ab7874212c3ef5f523be3a945346f5e48d1d75",
+    "source_locator": "Abstract, randomized crossover study",
+    "fact_ids": [
+      "A15.F1",
+      "A15.F2"
+    ],
+    "observation_ids": [
+      "A15.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A16",
+    "path": "evidence/cards/A16.md",
+    "source_id": "L16",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "bec0ff95b4ed41369ecfba4c4a6335d4181d3cf23cc67544095ef5e89d913876",
+    "source_locator": "Abstract",
+    "fact_ids": [
+      "A16.F1",
+      "A16.F2"
+    ],
+    "observation_ids": [
+      "A16.N1",
+      "A16.N2"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A17",
+    "path": "evidence/cards/A17.md",
+    "source_id": "L17",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "edca8d14c30a8e5d79528ce1957b65780a2dac1730610a8e52e77544fe983dc5",
+    "source_locator": "Abstract, Results and Conclusions",
+    "fact_ids": [
+      "A17.F1",
+      "A17.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A18",
+    "path": "evidence/cards/A18.md",
+    "source_id": "L18",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "911fa49094e8b129a9ca5c70476eaa6372ed8b44140cbbb2f7fcdf3a8c018986",
+    "source_locator": "Abstract",
+    "fact_ids": [
+      "A18.F1",
+      "A18.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A19",
+    "path": "evidence/cards/A19.md",
+    "source_id": "L19",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "2901e3929a6852a3ab2b3798342fc108308d23dd3ebd11d9a72337647a5ef06c",
+    "source_locator": "Abstract",
+    "fact_ids": [
+      "A19.F1",
+      "A19.F2"
+    ],
+    "observation_ids": [
+      "A19.N1"
+    ],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:A20",
+    "path": "evidence/cards/A20.md",
+    "source_id": "L20",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "b237fac79f50622eb04c6b58db2c366f543e5b109ba8bf8c017c3aa308b55b4f",
+    "source_locator": "2.1; 3",
+    "fact_ids": [
+      "A20.F1",
+      "A20.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:D10",
+    "path": "evidence/cards/D10.md",
+    "source_id": "D10",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "8514e18d91cba435955e188f3bc8b8fdc7e45ed01fbc924699472808c774d420",
+    "source_locator": null,
+    "fact_ids": [
+      "D10.F1",
+      "D10.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:D14",
+    "path": "evidence/cards/D14.md",
+    "source_id": "D14",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "6011c57ee1408b17df6cb772e41da766f614d52ad9aaede12aa0c5cd65bbf937",
+    "source_locator": null,
+    "fact_ids": [
+      "D14.F1",
+      "D14.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:D13",
+    "path": "evidence/cards/D13.md",
+    "source_id": "D13",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "b0df49e6156bfc32ad1f30850248f1fc52e335cff591f6ac9e544bdd5f4d7fad",
+    "source_locator": null,
+    "fact_ids": [
+      "D13.F1",
+      "D13.F2"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  },
+  {
+    "card_id": "card:P03",
+    "path": "evidence/cards/P03.md",
+    "source_id": "P03",
+    "capture_kind": "curated_paraphrase",
+    "original_document_sha256": null,
+    "local_card_sha256": "f3064c841c0abb397eafb641db16199ee638688fb76ee6f7307bdad78130c4c6",
+    "source_locator": null,
+    "fact_ids": [
+      "P03.F1",
+      "P03.F2",
+      "P03.F3"
+    ],
+    "observation_ids": [],
+    "review_status": "draft"
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "input": {
+    "case_id": "P5-A02-V03",
+    "case_revision": {
+      "schema_version": "1.0.0",
+      "case_id": "P5-A02-V03",
+      "case_revision_id": "P5-A02-V03:r1",
+      "workspace_id": "benchmark-public",
+      "data_kind": "synthetic_fixture",
+      "analysis_intent": "bioequivalence_screen",
+      "route": "oral",
+      "population": {
+        "status": "unknown",
+        "description": null
+      },
+      "identity": {
+        "status": "resolved",
+        "molecular_entity_ref": "entity:A02",
+        "substance_form_ref": null,
+        "product_revision_ref": "context:A02"
+      },
+      "composition_completeness": "unknown",
+      "dose": {
+        "status": "unknown",
+        "amount": null,
+        "unit": null,
+        "basis": null
+      },
+      "requirements": [
+        {
+          "id": "P5-A02-V03:R0",
+          "level": "hard",
+          "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+          "origin_ref": "scenario:P5-A02-V03"
+        }
+      ],
+      "external_processing_allowed": true,
+      "source_refs": [
+        "L02",
+        "P03",
+        "D13"
+      ],
+      "created_at": "2026-10-18T00:00:00Z"
+    },
+    "user_messages": [
+      {
+        "role": "user",
+        "content": "Объект исследования: NOXAFIL, oral suspension vs delayed-release tablets. Это задача технолога, не лечение пациента. В черновике коллеги написано: «Суспензия 200 mg/5 mL означает, что пациент принимает 200 mg ежедневно, и её можно заменить таблеткой миллиграмм к миллиграмму.» Проверьте это утверждение, исправьте досье и укажите, как ошибка влияет на следующий эксперимент."
+      }
+    ],
+    "dossier": {
+      "card_refs": [
+        "card:A02",
+        "card:P03",
+        "card:D13"
+      ],
+      "observation_refs": [
+        "A02.N1"
+      ],
+      "additional_inputs": []
+    },
+    "requested_output_format": "benchmark_response_v1"
+  },
+  "draft_oracle": {
+    "case_id": "P5-A02-V03",
+    "oracle_status": "draft_for_expert_review",
+    "author_type": "AI_assisted_curator",
+    "allowed_decision_status": [
+      "partial",
+      "ready_for_review"
+    ],
+    "must_cite_fact_ids": [
+      "A02.F1",
+      "A02.F2"
+    ],
+    "must_include_warning_codes": [
+      "EXPERT_REVIEW_REQUIRED",
+      "RESEARCH_ONLY",
+      "UNSUPPORTED_GENERALIZATION"
+    ],
+    "must_list_missing_inputs": [
+      "quantitative_composition"
+    ],
+    "required_action_codes": [],
+    "forbidden_action_codes": [
+      "claim_new_form_clinically_validated",
+      "prescribe_patient_regimen"
+    ],
+    "new_form_quantification_allowed": false,
+    "minimum_candidates": 0,
+    "manual_rubric": [
+      "Идентифицировать конкретную форму и не смешивать концентрацию с режимом дозирования.",
+      "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+      "Указана конкретная ошибка черновика и её исправление по фактам карточки, а не только общий дисклеймер."
+    ],
+    "anchor_fact_refs": [
+      "A02.F1",
+      "A02.F2"
+    ],
+    "source_refs": [
+      "L02",
+      "P03",
+      "D13"
+    ],
+    "acceptable_next_checks": [
+      "Уточнить, какая именно суспензия выбрана.",
+      "Сравнивать формы с учётом различий в назначении и PK."
+    ],
+    "limitations": [
+      "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+      "Другие научно обоснованные варианты допустимы после экспертной оценки."
+    ]
+  }
+}

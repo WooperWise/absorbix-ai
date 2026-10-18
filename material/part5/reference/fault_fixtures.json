@@ -1,0 +1,62 @@
+[
+  {
+    "fixture_id": "P5-A01-V06:event",
+    "kind": "simulated_adapter_failure",
+    "module_id": "M03",
+    "operation": "refresh_source",
+    "response": {
+      "http_status": 503,
+      "retryable": true,
+      "result": null
+    },
+    "is_real_incident": false
+  },
+  {
+    "fixture_id": "P5-A05-V06:event",
+    "kind": "simulated_adapter_failure",
+    "module_id": "M03",
+    "operation": "refresh_source",
+    "response": {
+      "http_status": 503,
+      "retryable": true,
+      "result": null
+    },
+    "is_real_incident": false
+  },
+  {
+    "fixture_id": "P5-A09-V06:event",
+    "kind": "simulated_adapter_failure",
+    "module_id": "M03",
+    "operation": "refresh_source",
+    "response": {
+      "http_status": 503,
+      "retryable": true,
+      "result": null
+    },
+    "is_real_incident": false
+  },
+  {
+    "fixture_id": "P5-A13-V06:event",
+    "kind": "simulated_adapter_failure",
+    "module_id": "M03",
+    "operation": "refresh_source",
+    "response": {
+      "http_status": 503,
+      "retryable": true,
+      "result": null
+    },
+    "is_real_incident": false
+  },
+  {
+    "fixture_id": "P5-A17-V06:event",
+    "kind": "simulated_adapter_failure",
+    "module_id": "M03",
+    "operation": "refresh_source",
+    "response": {
+      "http_status": 503,
+      "retryable": true,
+      "result": null
+    },
+    "is_real_incident": false
+  }
+]

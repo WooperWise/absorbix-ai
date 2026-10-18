@@ -1,0 +1,347 @@
+{
+  "entities": [
+    {
+      "entity_id": "entity:A01",
+      "name_as_in_context": "itraconazole",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L01"
+      ]
+    },
+    {
+      "entity_id": "entity:A02",
+      "name_as_in_context": "posaconazole",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L02"
+      ]
+    },
+    {
+      "entity_id": "entity:A03",
+      "name_as_in_context": "fenofibrate",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L03"
+      ]
+    },
+    {
+      "entity_id": "entity:A04",
+      "name_as_in_context": "albendazole",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L04"
+      ]
+    },
+    {
+      "entity_id": "entity:A05",
+      "name_as_in_context": "atovaquone",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L05"
+      ]
+    },
+    {
+      "entity_id": "entity:A06",
+      "name_as_in_context": "ziprasidone",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L06"
+      ]
+    },
+    {
+      "entity_id": "entity:A07",
+      "name_as_in_context": "lurasidone",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L07"
+      ]
+    },
+    {
+      "entity_id": "entity:A08",
+      "name_as_in_context": "rivaroxaban",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L08"
+      ]
+    },
+    {
+      "entity_id": "entity:A09",
+      "name_as_in_context": "dabigatran etexilate",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L09"
+      ]
+    },
+    {
+      "entity_id": "entity:A10",
+      "name_as_in_context": "levothyroxine sodium",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L10"
+      ]
+    },
+    {
+      "entity_id": "entity:A11",
+      "name_as_in_context": "ciprofloxacin",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L11"
+      ]
+    },
+    {
+      "entity_id": "entity:A12",
+      "name_as_in_context": "alendronate sodium",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L12"
+      ]
+    },
+    {
+      "entity_id": "entity:A13",
+      "name_as_in_context": "tacrolimus",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L13"
+      ]
+    },
+    {
+      "entity_id": "entity:A14",
+      "name_as_in_context": "duloxetine hydrochloride",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L14"
+      ]
+    },
+    {
+      "entity_id": "entity:A15",
+      "name_as_in_context": "valacyclovir / acyclovir",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L15"
+      ]
+    },
+    {
+      "entity_id": "entity:A16",
+      "name_as_in_context": "cobimetinib",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L16"
+      ]
+    },
+    {
+      "entity_id": "entity:A17",
+      "name_as_in_context": "ritonavir",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L17"
+      ]
+    },
+    {
+      "entity_id": "entity:A18",
+      "name_as_in_context": "semaglutide",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L18"
+      ]
+    },
+    {
+      "entity_id": "entity:A19",
+      "name_as_in_context": "remdesivir",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L19"
+      ]
+    },
+    {
+      "entity_id": "entity:A20",
+      "name_as_in_context": "paclitaxel",
+      "canonical_structure": null,
+      "structural_resolution": "not_performed",
+      "source_refs": [
+        "L20"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "context_id": "context:A01",
+      "name": "SPORANOX, capsules; выбранная запись DailyMed",
+      "entity_ref": "entity:A01",
+      "route": "oral",
+      "source_ref": "L01",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A02",
+      "name": "NOXAFIL, oral suspension vs delayed-release tablets",
+      "entity_ref": "entity:A02",
+      "route": "oral",
+      "source_ref": "L02",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A03",
+      "name": "TRICOR 145 mg, историческая запись DailyMed",
+      "entity_ref": "entity:A03",
+      "route": "oral",
+      "source_ref": "L03",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A04",
+      "name": "ALBENZA, film-coated tablets",
+      "entity_ref": "entity:A04",
+      "route": "oral",
+      "source_ref": "L04",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A05",
+      "name": "MEPRON oral suspension, DailyMed version 28",
+      "entity_ref": "entity:A05",
+      "route": "oral",
+      "source_ref": "L05",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A06",
+      "name": "GEODON capsules, Pfizer label",
+      "entity_ref": "entity:A06",
+      "route": "oral",
+      "source_ref": "L06",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A07",
+      "name": "LATUDA tablets",
+      "entity_ref": "entity:A07",
+      "route": "oral",
+      "source_ref": "L07",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A08",
+      "name": "XARELTO tablets: manufacturer Medical Information",
+      "entity_ref": "entity:A08",
+      "route": "oral",
+      "source_ref": "L08",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A09",
+      "name": "PRADAXA capsules",
+      "entity_ref": "entity:A09",
+      "route": "oral",
+      "source_ref": "L09",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A10",
+      "name": "SYNTHROID tablets, историческая запись",
+      "entity_ref": "entity:A10",
+      "route": "oral",
+      "source_ref": "L10",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A11",
+      "name": "Ciprofloxacin coated tablets, selected DailyMed record",
+      "entity_ref": "entity:A11",
+      "route": "oral",
+      "source_ref": "L11",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A12",
+      "name": "FOSAMAX tablets, Organon",
+      "entity_ref": "entity:A12",
+      "route": "oral",
+      "source_ref": "L12",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A13",
+      "name": "ENVARSUS XR extended-release tablets",
+      "entity_ref": "entity:A13",
+      "route": "oral",
+      "source_ref": "L13",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A14",
+      "name": "CYMBALTA delayed-release capsules",
+      "entity_ref": "entity:A14",
+      "route": "oral",
+      "source_ref": "L14",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A15",
+      "name": "Soul-Lawton et al.: valaciclovir versus IV acyclovir",
+      "entity_ref": "entity:A15",
+      "route": "oral",
+      "source_ref": "L15",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A16",
+      "name": "Takahashi et al.: absorption and first-pass metabolism",
+      "entity_ref": "entity:A16",
+      "route": "oral",
+      "source_ref": "L16",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A17",
+      "name": "Bauer et al.: conformational polymorphism",
+      "entity_ref": "entity:A17",
+      "route": "oral",
+      "source_ref": "L17",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A18",
+      "name": "Buckley et al.: semaglutide coformulated with SNAC",
+      "entity_ref": "entity:A18",
+      "route": "oral",
+      "source_ref": "L18",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A19",
+      "name": "Cyclodextrin-enabled remdesivir: electrospun/lyophilized research forms",
+      "entity_ref": "entity:A19",
+      "route": "intravenous",
+      "source_ref": "L19",
+      "is_full_product_recipe": false
+    },
+    {
+      "context_id": "context:A20",
+      "name": "ABRAXANE albumin-bound injectable suspension",
+      "entity_ref": "entity:A20",
+      "route": "intravenous",
+      "source_ref": "L20",
+      "is_full_product_recipe": false
+    }
+  ],
+  "interpretation": "resolved в кейсе означает выбранный контекст продукта; канонизация структуры и полиморфов не выполнена."
+}

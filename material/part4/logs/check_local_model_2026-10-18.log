@@ -1,0 +1,14 @@
+=== Проверка локальной модели (OpenAI-совместимый API) · 2026-10-18T15:26:05 ===
+openai 3.35.1 · python 3.12.3
+
+Эндпойнт: http://localhost:8000/v1
+[OK] переменные окружения: OPENAI_BASE_URL задан, LOCAL_MODEL=Qwen3.8-27B-FP8
+[OK] создание клиента OpenAI: base_url=http://localhost:8000/v1
+[OK] GET /v1/models: доступно моделей: 1: Qwen3.8-27B-FP8
+Модель для smoke-теста: Qwen3.8-27B-FP8
+
+[OK] chat.completions.create: 263 мс, токены: prompt=37, completion=11, ответ: Генеративный вызов работает.
+[OK] structured output (json_schema): 692 мс, схема соблюдена
+Извлечено: {"compound":"Итраконазол","limiting_factor":"растворимость","proposed_strategy":"твёрдая аморфная дисперсия на полимере HPMC"}
+
+Итог: 5/5 проверок пройдено

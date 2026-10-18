@@ -1,0 +1,541 @@
+[
+  {
+    "id": "S01",
+    "title": "FDA. ICH Q8(R2): Pharmaceutical Development",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q8r2-pharmaceutical-development",
+    "date_or_version": "Final; ноябрь 2009",
+    "source_type": "Регуляторное руководство",
+    "access_review": "Официальная страница и PDF; просмотрена страница с элементами фармацевтической разработки.",
+    "supports": "Целевой профиль продукта, критические характеристики качества, связь свойств материалов и процесса с результатом.",
+    "limits": "Не предписывает выбранный программный стек и не подтверждает пригодность будущей платформы.",
+    "additional_urls": [
+      "https://www.fda.gov/media/71535/download"
+    ]
+  },
+  {
+    "id": "S02",
+    "title": "FDA. ICH Q9(R1): Quality Risk Management",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q9r1-quality-risk-management",
+    "date_or_version": "Final; май 2023",
+    "source_type": "Регуляторное руководство",
+    "access_review": "Официальная страница и PDF; просмотрены положения о субъективности и неопределённости.",
+    "supports": "Управление рисками качества и необходимость учитывать неопределённость и субъективность оценок.",
+    "limits": "Проектная классификация рисков в этом отчёте не является дословной шкалой ICH.",
+    "additional_urls": [
+      "https://www.fda.gov/media/167721/download"
+    ]
+  },
+  {
+    "id": "S03",
+    "title": "FDA. ICH M9: Biopharmaceutics Classification System-Based Biowaivers",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m9-biopharmaceutics-classification-system-based-biowaivers",
+    "date_or_version": "Final; май 2021",
+    "source_type": "Регуляторное руководство",
+    "access_review": "Официальная страница; предметная интерпретация согласована с первым этапом.",
+    "supports": "Область BCS-биовейвера; необходимость соответствующих данных.",
+    "limits": "В отчёте не утверждается, что один in silico прогноз устанавливает регуляторный BCS или право на биовейвер.",
+    "additional_urls": []
+  },
+  {
+    "id": "S04",
+    "title": "FDA. ICH M13A: Bioequivalence for Immediate-Release Solid Oral Dosage Forms",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m13a-bioequivalence-immediate-release-solid-oral-dosage-forms",
+    "date_or_version": "Final; октябрь 2024",
+    "source_type": "Регуляторное руководство",
+    "access_review": "Официальная страница.",
+    "supports": "Отдельный контекст задачи биоэквивалентности пероральных форм в области действия документа.",
+    "limits": "Не распространяется автоматически на все пути введения, формы и клинические ситуации.",
+    "additional_urls": []
+  },
+  {
+    "id": "S05",
+    "title": "FDA. ICH M15: General Principles for Model-Informed Drug Development",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development",
+    "date_or_version": "Final; июнь 2026",
+    "source_type": "Регуляторное руководство",
+    "access_review": "Официальная страница, текст PDF и изображения страниц с определениями и таблицей оценки.",
+    "supports": "Вопрос исследования, context of use, влияние модели, последствия неправильного решения, план оценки и документация MIDD.",
+    "limits": "Не автоматическая сертификация ПО. Поля и статусы предлагаемых контрактов — адаптация автора.",
+    "additional_urls": [
+      "https://www.fda.gov/media/184747/download"
+    ]
+  },
+  {
+    "id": "S06",
+    "title": "FDA. Considerations for the Use of Artificial Intelligence to Support Regulatory Decision-Making for Drug and Biological Products",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological",
+    "date_or_version": "Draft; январь 2025; проверен статус 18.10.2026",
+    "source_type": "Проект регуляторного руководства",
+    "access_review": "Официальная страница, PDF, изображение страницы с этапами оценки доверия.",
+    "supports": "Риск-ориентированная оценка доверия к AI для заявленного контекста использования.",
+    "limits": "Draft / Not for implementation. Не представлять как окончательное обязательное требование к каждому исследовательскому приложению.",
+    "additional_urls": [
+      "https://www.fda.gov/media/184830/download"
+    ]
+  },
+  {
+    "id": "S07",
+    "title": "EMA. Reflection paper on the use of artificial intelligence in the medicinal product lifecycle",
+    "url": "https://www.ema.europa.eu/en/scientific-guidelines/use-artificial-intelligence-ai-medicinal-product-lifecycle",
+    "date_or_version": "Принят 30.09.2024",
+    "source_type": "Документ регулятора — reflection paper",
+    "access_review": "Официальная страница и PDF; просмотрены положения о данных и независимой оценке.",
+    "supports": "Разделение обучающих и тестовых данных, контроль смещений, документация и применимость результатов.",
+    "limits": "Не закон и не основание для заявления о соответствии всему регуляторному режиму.",
+    "additional_urls": [
+      "https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf"
+    ]
+  },
+  {
+    "id": "S08",
+    "title": "FDA. ICH Q1A(R2): Stability Testing of New Drug Substances and Products",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q1ar2-stability-testing-new-drug-substances-and-products",
+    "date_or_version": "Final; 2003",
+    "source_type": "Регуляторное руководство",
+    "access_review": "Официальная страница.",
+    "supports": "Стабильность продукта — самостоятельный предмет испытаний.",
+    "limits": "Из названия эксципиента или расчётной характеристики нельзя вывести установленный срок годности.",
+    "additional_urls": []
+  },
+  {
+    "id": "S09",
+    "title": "EMA. ICH Q1 guideline on stability testing of drug substances and drug products",
+    "url": "https://www.ema.europa.eu/en/scientific-guidelines/ich-q1-guideline-stability-testing-drug-substances-drug-products",
+    "date_or_version": "На проверенной странице: Draft, Step 2b; опубликован 30.04.2025",
+    "source_type": "Проект обновлённого руководства",
+    "access_review": "Прочитана официальная карточка статуса.",
+    "supports": "Наличие проекта консолидированного Q1 и необходимость версионирования правил.",
+    "limits": "Закрытие консультации не означает вступление окончательной версии в силу; не объявляется действующей заменой всех прежних Q1.",
+    "additional_urls": []
+  },
+  {
+    "id": "S10",
+    "title": "FDA. Part 11, Electronic Records; Electronic Signatures — Scope and Application",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application",
+    "date_or_version": "Guidance; сентябрь 2003",
+    "source_type": "Официальное разъяснение области применения",
+    "access_review": "Прочитано официальное описание и текст руководства на странице.",
+    "supports": "Применимость Part 11 зависит от регулируемых электронных записей и контекста использования.",
+    "limits": "Наличие журналов или кнопки согласования не делает исследовательский прототип Part 11-compliant.",
+    "additional_urls": []
+  },
+  {
+    "id": "S11",
+    "title": "ISO/IEC/IEEE 42010:2022 — Architecture description",
+    "url": "https://www.iso.org/standard/74393.html",
+    "date_or_version": "Издание 2; ноябрь 2022",
+    "source_type": "Международный стандарт, публичная карточка",
+    "access_review": "Прочитана публичная аннотация ISO, не платный полный текст.",
+    "supports": "Описание архитектуры через заинтересованные стороны, интересы и представления; стандарт не задаёт единственную архитектуру.",
+    "limits": "Полное нормативное соответствие не проверено и не заявляется.",
+    "additional_urls": []
+  },
+  {
+    "id": "S12",
+    "title": "ISO/IEC 25010:2023 — Product quality model",
+    "url": "https://www.iso.org/standard/78176.html",
+    "date_or_version": "2023",
+    "source_type": "Международный стандарт, публичная карточка",
+    "access_review": "Прочитана публичная аннотация ISO, не платный полный текст.",
+    "supports": "Модель качества программного продукта; опубликованная редакция описывает девять характеристик.",
+    "limits": "Предложенные ниже NFR не выдаются за дословную полную таблицу стандарта.",
+    "additional_urls": []
+  },
+  {
+    "id": "S13",
+    "title": "C4 model — System context and container diagrams",
+    "url": "https://c4model.com/diagrams/container",
+    "date_or_version": "Действующая веб-документация; проверка 18.10.2026",
+    "source_type": "Документация авторов метода",
+    "access_review": "Прочитаны страницы context, container, component.",
+    "supports": "Разделение уровня системы, исполняемых приложений/хранилищ и внутренних компонентов.",
+    "limits": "C4 container не равен Docker-контейнеру; C4 не подтверждает научную пригодность системы.",
+    "additional_urls": [
+      "https://c4model.com/diagrams/system-context",
+      "https://c4model.com/diagrams/component"
+    ]
+  },
+  {
+    "id": "S14",
+    "title": "W3C. PROV-DM: The PROV Data Model",
+    "url": "https://www.w3.org/TR/prov-dm/",
+    "date_or_version": "W3C Recommendation; 30.04.2013",
+    "source_type": "Открытая спецификация",
+    "access_review": "Прочитаны определения сущностей, действий, агентов и связей происхождения.",
+    "supports": "Концептуальная модель происхождения данных.",
+    "limits": "Отчёт предлагает отображение на собственную схему; не заявляет полную PROV-совместимость и не требует графовую СУБД.",
+    "additional_urls": []
+  },
+  {
+    "id": "S15",
+    "title": "The Unified Code for Units of Measure — UCUM",
+    "url": "https://ucum.org/ucum",
+    "date_or_version": "Версия 2.2; 17.06.2024",
+    "source_type": "Официальная спецификация единиц",
+    "access_review": "Прочитана официальная спецификация, разделы об обозначениях и аннотациях.",
+    "supports": "Машиночитаемые единицы и размерностная нормализация.",
+    "limits": "UCUM не заменяет сведения о химическом основании дозы, методе или типе массовой доли.",
+    "additional_urls": []
+  },
+  {
+    "id": "S16",
+    "title": "JSON Schema — Draft 2020-12",
+    "url": "https://json-schema.org/draft/2020-12",
+    "date_or_version": "Draft 2020-12; опубликованные спецификации 2022",
+    "source_type": "Официальная спецификация",
+    "access_review": "Прочитаны обзор, core/validation и назначение ключевых слов.",
+    "supports": "Контракты структуры сообщений, required, enum, композиция и валидация.",
+    "limits": "Структурная корректность JSON не доказывает научную истинность; format должен явно проверяться используемым валидатором.",
+    "additional_urls": [
+      "https://json-schema.org/draft/2020-12/json-schema-validation"
+    ]
+  },
+  {
+    "id": "S17",
+    "title": "OpenAPI Specification 3.2.1 и 3.1.2",
+    "url": "https://spec.openapis.org/oas/v3.2.1.html",
+    "date_or_version": "3.2.1: 10.09.2026; для проекта выбран контракт 3.1.2",
+    "source_type": "Официальная спецификация",
+    "access_review": "Прочитаны обе опубликованные версии и разделение версии спецификации и API.",
+    "supports": "Формализованное описание HTTP API.",
+    "limits": "Выбор 3.1.2 — намеренное проектное решение для первичного инструментария, не утверждение, что это последняя версия.",
+    "additional_urls": [
+      "https://spec.openapis.org/oas/v3.1.2.html"
+    ]
+  },
+  {
+    "id": "S18",
+    "title": "IETF. RFC 9457 — Problem Details for HTTP APIs",
+    "url": "https://www.rfc-editor.org/rfc/rfc9457.html",
+    "date_or_version": "Июль 2023",
+    "source_type": "Открытый интернет-стандарт",
+    "access_review": "Прочитаны поля ответа об ошибке и ограничения раскрытия деталей.",
+    "supports": "Единый формат ошибок HTTP API.",
+    "limits": "Конкретные коды предметных ошибок в отчёте — проектные.",
+    "additional_urls": []
+  },
+  {
+    "id": "S19",
+    "title": "IETF. RFC 9110 — HTTP Semantics",
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "date_or_version": "Июнь 2022",
+    "source_type": "Открытый интернет-стандарт",
+    "access_review": "Прочитаны относящиеся к проекту положения о 202 и условных запросах.",
+    "supports": "202 Accepted не означает завершения; условное обновление версии ресурса.",
+    "limits": "Схема job/lease/idempotency — проектная реализация поверх HTTP, а не автоматическая гарантия RFC.",
+    "additional_urls": []
+  },
+  {
+    "id": "S20",
+    "title": "PostgreSQL 18 — Row Security Policies",
+    "url": "https://www.postgresql.org/docs/18/ddl-rowsecurity.html",
+    "date_or_version": "Документация ветки 18; проверка 18.10.2026",
+    "source_type": "Официальная документация",
+    "access_review": "Прочитаны политики RLS и исключения для владельца, superuser, BYPASSRLS.",
+    "supports": "Ограничения на уровне строк и условия обхода политик.",
+    "limits": "RLS не заменяет авторизацию приложения, безопасность файлов, индексов и процессов.",
+    "additional_urls": []
+  },
+  {
+    "id": "S21",
+    "title": "PostgreSQL 18 — SELECT / SKIP LOCKED",
+    "url": "https://www.postgresql.org/docs/18/sql-select.html",
+    "date_or_version": "Документация ветки 18; проверка 18.10.2026",
+    "source_type": "Официальная документация",
+    "access_review": "Прочитана семантика SKIP LOCKED и оговорка о queue-like tables.",
+    "supports": "Примитив для конкурентного получения задач из очереди.",
+    "limits": "Не готовый движок долговременных процессов и не гарантия exactly-once.",
+    "additional_urls": []
+  },
+  {
+    "id": "S22",
+    "title": "pgvector — official repository and documentation",
+    "url": "https://github.com/pgvector/pgvector",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Первичный репозиторий проекта",
+    "access_review": "Прочитаны exact/approximate search и фильтрация результатов индекса.",
+    "supports": "Векторный поиск в PostgreSQL; ограничения полноты при приближённом поиске с фильтрами.",
+    "limits": "В проекте не зафиксирована непроверенная версия расширения; безопасность и recall проверяются отдельно.",
+    "additional_urls": []
+  },
+  {
+    "id": "S23",
+    "title": "FastAPI — Background Tasks",
+    "url": "https://fastapi.tiangolo.com/tutorial/background-tasks/",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация",
+    "access_review": "Прочитан раздел Caveat о тяжёлых фоновых задачах.",
+    "supports": "Отделение простых задач после ответа от тяжёлых процессов.",
+    "limits": "BackgroundTasks не предлагается как долговременная очередь с восстановлением после сбоя.",
+    "additional_urls": []
+  },
+  {
+    "id": "S24",
+    "title": "Pydantic — Strict mode",
+    "url": "https://docs.pydantic.dev/latest/concepts/strict_mode/",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация",
+    "access_review": "Прочитан strict mode; исходный URL перенаправляет на текущую документацию.",
+    "supports": "Контроль приведения типов при проверке входа.",
+    "limits": "Strict mode имеет особенности для JSON и не заменяет предметные проверки единиц и научного смысла.",
+    "additional_urls": []
+  },
+  {
+    "id": "S25",
+    "title": "OpenTelemetry — Signals",
+    "url": "https://opentelemetry.io/docs/concepts/signals/",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация",
+    "access_review": "Прочитано описание метрик, трассировок и журналов.",
+    "supports": "Техническая наблюдаемость приложения.",
+    "limits": "Трассировка не равна научному происхождению, аудиту решений или регуляторной валидации.",
+    "additional_urls": []
+  },
+  {
+    "id": "S26",
+    "title": "OWASP Application Security Verification Standard",
+    "url": "https://owasp.org/projects/asvs",
+    "date_or_version": "Стабильная редакция 5.0.0; 30.05.2025",
+    "source_type": "Открытый стандарт проверки безопасности сообщества OWASP",
+    "access_review": "Прочитаны страница проекта и сведения о релизе, не весь каталог требований.",
+    "supports": "Основание для явного плана проверок безопасности веб-приложения.",
+    "limits": "Соответствие ASVS не заявляется; нужен перечень применимых требований и реальные тесты.",
+    "additional_urls": [
+      "https://github.com/OWASP/ASVS/releases"
+    ]
+  },
+  {
+    "id": "S27",
+    "title": "OWASP Top 10 for LLM Applications — LLM01:2025 Prompt Injection",
+    "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+    "date_or_version": "Редакция 2025",
+    "source_type": "Первичная документация проекта безопасности",
+    "access_review": "Прочитаны механизмы prompt injection и ограничения мер защиты.",
+    "supports": "Внешние документы могут содержать управляющие инструкции; RAG сам по себе не устраняет риск.",
+    "limits": "Предлагаемые ограничения инструментов снижают риск, но не дают абсолютной защиты.",
+    "additional_urls": []
+  },
+  {
+    "id": "S28",
+    "title": "OWASP — Server-Side Request Forgery Prevention Cheat Sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Первичная документация безопасности",
+    "access_review": "Прочитаны меры ограничения назначения сетевых запросов.",
+    "supports": "Контроль URL, IP, перенаправлений и доступа к внутренним ресурсам.",
+    "limits": "Проектная сетевая политика должна быть проверена тестами и инфраструктурой.",
+    "additional_urls": []
+  },
+  {
+    "id": "S29",
+    "title": "OWASP — File Upload Cheat Sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Первичная документация безопасности",
+    "access_review": "Прочитаны ограничения типов, размера, размещения и обработки файлов.",
+    "supports": "Недоверенные файлы следует проверять и обрабатывать отдельно от привилегированной части системы.",
+    "limits": "Успешная проверка расширения или MIME не доказывает безопасность содержимого.",
+    "additional_urls": []
+  },
+  {
+    "id": "S30",
+    "title": "NCBI PubChem — PUG REST and programmatic access",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/pug-rest.md",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация API",
+    "access_review": "HTML PUG REST возвращал защитную страницу; прочитано полное официальное Markdown-представление.",
+    "supports": "Контракт PUG REST, ограничение запросов, throttling, обработка форматов и ошибок.",
+    "limits": "Документация прочитана; интеграционный прогон нового адаптера не выполнялся.",
+    "additional_urls": [
+      "https://pubchem.ncbi.nlm.nih.gov/docs/programmatic-access",
+      "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/programmatic-access.md"
+    ]
+  },
+  {
+    "id": "S31",
+    "title": "NCBI PubChem — PUG View",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/pug_view/",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация API",
+    "access_review": "Прочитано назначение сервиса аннотаций.",
+    "supports": "Извлечение аннотаций и их происхождения отдельно от вычисленных свойств.",
+    "limits": "Аннотация агрегатора не превращается автоматически в независимое первичное измерение.",
+    "additional_urls": []
+  },
+  {
+    "id": "S32",
+    "title": "DailyMed REST API v2 — /spls",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/webservices-help/v2/spls_api.cfm",
+    "date_or_version": "API v2; проверка 18.10.2026",
+    "source_type": "Официальная документация NLM",
+    "access_review": "Прочитаны параметры поиска и формат результатов.",
+    "supports": "Продуктовые записи SPL и документированный доступ.",
+    "limits": "Не гарантируется полный количественный состав всех продуктов.",
+    "additional_urls": []
+  },
+  {
+    "id": "S33",
+    "title": "DailyMed REST API v2 — SPL history",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/webservices-help/v2/spls_setid_history_api.cfm",
+    "date_or_version": "API v2; проверка 18.10.2026",
+    "source_type": "Официальная документация NLM",
+    "access_review": "Прочитана история версий по SETID.",
+    "supports": "Привязка к конкретной версии инструкции.",
+    "limits": "Одна ссылка на актуальную страницу не заменяет снимок использованной версии.",
+    "additional_urls": []
+  },
+  {
+    "id": "S34",
+    "title": "ChEMBL — Data Web Services",
+    "url": "https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services",
+    "date_or_version": "Изменяемая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация EMBL-EBI",
+    "access_review": "Прочитана документация; Swagger-страница отдельно отдавала только JS-оболочку.",
+    "supports": "Сущности API, пагинация page_meta и переход по next.",
+    "limits": "Нельзя объявлять первую страницу полной выгрузкой; контекст assay сохраняется.",
+    "additional_urls": []
+  },
+  {
+    "id": "S35",
+    "title": "RDKit — MolStandardize API",
+    "url": "https://www.rdkit.org/docs/source/rdkit.Chem.MolStandardize.rdMolStandardize.html",
+    "date_or_version": "Документация 2026.09.1 на момент просмотра",
+    "source_type": "Официальная документация",
+    "access_review": "Прочитаны операции нормализации и FragmentParent.",
+    "supports": "Доступные операции химической стандартизации.",
+    "limits": "Удаление фрагментов меняет представление соли/комплекса; исходник и преобразования необходимо сохранять.",
+    "additional_urls": []
+  },
+  {
+    "id": "S36",
+    "title": "FDA — Inactive Ingredients in Approved Drug Products: FAQ",
+    "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/inactive-ingredients-approved-drug-products-search-frequently-asked-questions",
+    "date_or_version": "Динамическая официальная документация; проверка 18.10.2026",
+    "source_type": "Регуляторная база и её пояснение",
+    "access_review": "Прочитаны пояснения maximum potency и maximum daily exposure.",
+    "supports": "Прецеденты эксципиентов с контекстом пути и формы.",
+    "limits": "Не универсальная таблица разрешённых безопасных доз; отсутствие записи не равно запрету.",
+    "additional_urls": []
+  },
+  {
+    "id": "S37",
+    "title": "openFDA — Drug Adverse Events",
+    "url": "https://open.fda.gov/apis/drug/event/",
+    "date_or_version": "Динамическая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация FDA",
+    "access_review": "Прочитаны ограничения интерпретации.",
+    "supports": "Сообщения о нежелательных событиях и их использование для поиска сигналов.",
+    "limits": "Нельзя по одному подсчёту сообщений устанавливать причинность, частоту или эффективность сочетаний.",
+    "additional_urls": []
+  },
+  {
+    "id": "S38",
+    "title": "FDA — Orange Book",
+    "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book",
+    "date_or_version": "Динамический реестр; проверка 18.10.2026",
+    "source_type": "Официальный источник FDA",
+    "access_review": "Прочитана официальная страница.",
+    "supports": "Продукты, терапевтическая эквивалентность, перечисленные патенты и эксклюзивность.",
+    "limits": "Не полное заключение о патентной свободе в любой юрисдикции.",
+    "additional_urls": []
+  },
+  {
+    "id": "S39",
+    "title": "Государственный реестр лекарственных средств РФ",
+    "url": "https://grls.minzdrav.gov.ru/",
+    "date_or_version": "Динамический реестр; проверка 18.10.2026",
+    "source_type": "Официальный реестр",
+    "access_review": "Прочитана доступная официальная страница.",
+    "supports": "Российские регистрационные сведения и инструкции.",
+    "limits": "Публичный промышленный API не подтверждён. Предлагается контролируемый импорт при отсутствии проверенного контракта.",
+    "additional_urls": []
+  },
+  {
+    "id": "S40",
+    "title": "Europe PMC — RESTful Web Service",
+    "url": "https://europepmc.org/RestfulWebService",
+    "date_or_version": "Документация API; проверка 18.10.2026",
+    "source_type": "Официальная документация литературного сервиса",
+    "access_review": "Прямое открытие завершалось ошибкой доступа; доступно индексированное описание официального источника.",
+    "supports": "Назначение поиска метаданных и доступного полного текста.",
+    "limits": "Успешный запрос production API и полнотекстовые права каждой статьи в этом этапе не проверены; требуется интеграционный тест.",
+    "additional_urls": []
+  },
+  {
+    "id": "S41",
+    "title": "Fu et al. ADMETlab 3.0",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38572755/",
+    "date_or_version": "2024; Nucleic Acids Research",
+    "source_type": "Первичная научная публикация разработчиков",
+    "access_review": "Библиографическое описание/аннотация, использованные также в этапе 2; текущая страница ограниченно отдаёт текст.",
+    "supports": "Наличие ADMET-предикторов, программного доступа и оценок неопределённости в публикации.",
+    "limits": "Текущий контракт API, SLA и право коммерческой интеграции не установлены одной статьёй.",
+    "additional_urls": []
+  },
+  {
+    "id": "S42",
+    "title": "Open Systems Pharmacology — OSPSuite-R",
+    "url": "https://www.open-systems-pharmacology.org/OSPSuite-R/",
+    "date_or_version": "Действующая документация; проверка 18.10.2026",
+    "source_type": "Официальная техническая документация",
+    "access_review": "Прочитаны назначение пакета, запуск симуляций и зависимости.",
+    "supports": "Загрузка и выполнение моделей PK-Sim/MoBi из R.",
+    "limits": "Совместимость конкретного runner-image с моделями необходимо проверять; не приписывается одинаковая поддержка всем GUI и workflow.",
+    "additional_urls": []
+  },
+  {
+    "id": "S43",
+    "title": "Open Systems Pharmacology — Qualification workflow",
+    "url": "https://docs.open-systems-pharmacology.org/shared-tools-and-example-workflows/qualification",
+    "date_or_version": "Действующая документация; проверка 18.10.2026",
+    "source_type": "Официальная документация",
+    "access_review": "Прочитаны планы, наблюдения, запуск и отчёт квалификации.",
+    "supports": "Воспроизводимый контур проверки моделей в заданном сценарии.",
+    "limits": "Документация ограничивает поддерживаемые типы проектов; поддержка MoBi в других компонентах не означает автоматическую поддержку данного workflow.",
+    "additional_urls": []
+  },
+  {
+    "id": "S44",
+    "title": "MolecularAI — AiZynthFinder",
+    "url": "https://github.com/MolecularAI/aizynthfinder",
+    "date_or_version": "Изменяемый первичный репозиторий; проверка 18.10.2026",
+    "source_type": "Код и документация разработчиков",
+    "access_review": "Прочитаны назначение, конфигурации и условия лицензии кода.",
+    "supports": "Ретросинтетический поиск, модели и исходные вещества как отдельные входы.",
+    "limits": "MIT кода не определяет автоматически права всех весов/данных и не подтверждает практический синтез.",
+    "additional_urls": []
+  },
+  {
+    "id": "S45",
+    "title": "OECD. (Q)SAR Assessment Framework, Second Edition",
+    "url": "https://www.oecd.org/en/publications/q-sar-assessment-framework-guidance-for-the-regulatory-assessment-of-quantitative-structure-activity-relationship-models-and-predictions-second-edition_bbdac345-en.html",
+    "date_or_version": "Второе издание; 15.11.2024; DOI 10.1787/bbdac345-en",
+    "source_type": "Руководство OECD",
+    "access_review": "Прочитана официальная аннотация, не полный многостраничный текст.",
+    "supports": "Раздельная оценка модели, отдельного прогноза и совокупности прогнозов.",
+    "limits": "Не заявляется полное прохождение QAF будущими предикторами.",
+    "additional_urls": []
+  },
+  {
+    "id": "S46",
+    "title": "FDA. Liposome Drug Products: CMC; Human Pharmacokinetics and Bioavailability; Labeling",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/liposome-drug-products-chemistry-manufacturing-and-controls-human-pharmacokinetics-and",
+    "date_or_version": "Final; апрель 2018",
+    "source_type": "Специализированное регуляторное руководство",
+    "access_review": "Прочитана официальная карточка и область применения.",
+    "supports": "Специфичность сложных систем доставки и необходимости CMC/PK-данных.",
+    "limits": "Не общий универсальный протокол для всех парентеральных форм.",
+    "additional_urls": []
+  },
+  {
+    "id": "S47",
+    "title": "ChEMBL Structure Pipeline",
+    "url": "https://github.com/chembl/ChEMBL_Structure_Pipeline",
+    "date_or_version": "Изменяемый первичный репозиторий; проверка 18.10.2026",
+    "source_type": "Код и документация EMBL-EBI",
+    "access_review": "Прочитано разделение checker, standardizer и getParent.",
+    "supports": "Поэтапная химическая проверка и нормализация, а не одно недокументированное преобразование.",
+    "limits": "Получение родительской структуры не устанавливает идентичность конечного продукта.",
+    "additional_urls": []
+  }
+]

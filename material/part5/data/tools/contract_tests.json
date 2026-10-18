@@ -1,0 +1,441 @@
+[
+  {
+    "test_id": "U01",
+    "operation": "convert_units",
+    "input": {
+      "value": 0.64,
+      "unit": "%",
+      "target_unit": "1"
+    },
+    "expected": {
+      "value": 0.0064,
+      "unit": "1"
+    },
+    "source_refs": [
+      "L12"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U02",
+    "operation": "convert_units",
+    "input": {
+      "value": 54.2,
+      "unit": "%",
+      "target_unit": "1"
+    },
+    "expected": {
+      "value": 0.542,
+      "unit": "1"
+    },
+    "source_refs": [
+      "L15"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U03",
+    "operation": "convert_units",
+    "input": {
+      "value": 60,
+      "unit": "%",
+      "target_unit": "1"
+    },
+    "expected": {
+      "value": 0.6,
+      "unit": "1"
+    },
+    "source_refs": [
+      "L06"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U04",
+    "operation": "convert_units",
+    "input": {
+      "value": 66,
+      "unit": "%",
+      "target_unit": "1"
+    },
+    "expected": {
+      "value": 0.66,
+      "unit": "1"
+    },
+    "source_refs": [
+      "L08"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U05",
+    "operation": "convert_units",
+    "input": {
+      "value": 0.88,
+      "unit": "1",
+      "target_unit": "%"
+    },
+    "expected": {
+      "value": 88,
+      "unit": "%"
+    },
+    "source_refs": [
+      "L16"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U06",
+    "operation": "convert_units",
+    "input": {
+      "value": 0.28,
+      "unit": "1",
+      "target_unit": "%"
+    },
+    "expected": {
+      "value": 28,
+      "unit": "%"
+    },
+    "source_refs": [
+      "L16"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U07",
+    "operation": "convert_units",
+    "input": {
+      "value": 1.8,
+      "unit": "mg/mL",
+      "target_unit": "g/L"
+    },
+    "expected": {
+      "value": 1.8,
+      "unit": "g/L"
+    },
+    "source_refs": [
+      "L09"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U08",
+    "operation": "convert_units",
+    "input": {
+      "value": 1.8,
+      "unit": "mg/mL",
+      "target_unit": "ug/mL"
+    },
+    "expected": {
+      "value": 1800,
+      "unit": "ug/mL"
+    },
+    "source_refs": [
+      "L09"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U09",
+    "operation": "convert_units",
+    "input": {
+      "value": 40,
+      "unit": "mg/mL",
+      "target_unit": "g/L"
+    },
+    "expected": {
+      "value": 40,
+      "unit": "g/L"
+    },
+    "source_refs": [
+      "L02"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U10",
+    "operation": "convert_units",
+    "input": {
+      "value": 40,
+      "unit": "mg/mL",
+      "target_unit": "ug/mL"
+    },
+    "expected": {
+      "value": 40000,
+      "unit": "ug/mL"
+    },
+    "source_refs": [
+      "L02"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Только размерностное преобразование опубликованного значения; биологическая интерпретация не меняется."
+  },
+  {
+    "test_id": "U11",
+    "operation": "concentration",
+    "input": {
+      "mass": 200,
+      "mass_unit": "mg",
+      "volume": 5,
+      "volume_unit": "mL"
+    },
+    "expected": {
+      "value": 40,
+      "unit": "mg/mL"
+    },
+    "source_refs": [
+      "L02"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Концентрация не является суточной дозой."
+  },
+  {
+    "test_id": "U12",
+    "operation": "normalize_unknown",
+    "input": {
+      "excipient_amount": null
+    },
+    "expected": {
+      "amount": null,
+      "status": "unknown"
+    },
+    "source_refs": [
+      "P03"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Отсутствие количества не заменяется нулём."
+  },
+  {
+    "test_id": "U13",
+    "operation": "compare_context",
+    "input": {
+      "endpoint_a": "fraction_absorbed",
+      "endpoint_b": "absolute_bioavailability"
+    },
+    "expected": {
+      "merge_allowed": false
+    },
+    "source_refs": [
+      "L16"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Fa и F различаются."
+  },
+  {
+    "test_id": "U14",
+    "operation": "compare_context",
+    "input": {
+      "endpoint_a": "AUC",
+      "endpoint_b": "Cmax"
+    },
+    "expected": {
+      "merge_allowed": false
+    },
+    "source_refs": [
+      "L07"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "AUC и Cmax не усредняются."
+  },
+  {
+    "test_id": "U15",
+    "operation": "compare_context",
+    "input": {
+      "form_a": "capsule",
+      "form_b": "oral_solution"
+    },
+    "expected": {
+      "merge_allowed": false
+    },
+    "source_refs": [
+      "L01"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Свойства конкретных форм не стираются при нормализации."
+  },
+  {
+    "test_id": "U16",
+    "operation": "compare_context",
+    "input": {
+      "dose_a_mg": 10,
+      "dose_b_mg": 20,
+      "fed_state": "fasted"
+    },
+    "expected": {
+      "merge_allowed": false
+    },
+    "source_refs": [
+      "L08"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Разная доза может означать разную биодоступность."
+  },
+  {
+    "test_id": "U17",
+    "operation": "normalize_uncertainty",
+    "input": {
+      "value": 2.6,
+      "plus_minus": 1.0,
+      "reported_type": "SD"
+    },
+    "expected": {
+      "type": "SD",
+      "ci95": null
+    },
+    "source_refs": [
+      "L05"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "SD нельзя молча назвать доверительным интервалом."
+  },
+  {
+    "test_id": "U18",
+    "operation": "route_guard",
+    "input": {
+      "route": "intravenous",
+      "model_scope": "oral_small_molecule"
+    },
+    "expected": {
+      "status": "out_of_domain"
+    },
+    "source_refs": [
+      "P03",
+      "L20"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Это проверка маршрутизации, не PK-прогноз."
+  },
+  {
+    "test_id": "U19",
+    "operation": "scope_guard",
+    "input": {
+      "molecule_class": "peptide",
+      "model_scope": "oral_small_molecule"
+    },
+    "expected": {
+      "status": "out_of_domain"
+    },
+    "source_refs": [
+      "P03",
+      "L18"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Пептид не проходит как малая молекула."
+  },
+  {
+    "test_id": "U20",
+    "operation": "source_failure",
+    "input": {
+      "http_status": 503
+    },
+    "expected": {
+      "status": "technical_failure",
+      "no_evidence_found": null
+    },
+    "source_refs": [
+      "P03"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Техническая ошибка не отрицательный литературный результат."
+  },
+  {
+    "test_id": "U21",
+    "operation": "evidence_origin",
+    "input": {
+      "origin": "ml_prediction",
+      "value": 0.9
+    },
+    "expected": {
+      "is_measurement": false
+    },
+    "source_refs": [
+      "P03"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Синтетический ответ модели не измерение."
+  },
+  {
+    "test_id": "U22",
+    "operation": "IID_guard",
+    "input": {
+      "ingredient_found": true,
+      "route_match": null,
+      "amount": null
+    },
+    "expected": {
+      "verdict": "insufficient_context",
+      "approved_recipe": false
+    },
+    "source_refs": [
+      "D10"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "IID не разрешает рецептуру по одному имени."
+  },
+  {
+    "test_id": "U23",
+    "operation": "FAERS_guard",
+    "input": {
+      "reports": 100,
+      "population_exposed": null
+    },
+    "expected": {
+      "incidence": null,
+      "causality_established": false
+    },
+    "source_refs": [
+      "D14"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "100 — синтетическое число сообщений; частота не вычисляется без знаменателя."
+  },
+  {
+    "test_id": "U24",
+    "operation": "access_guard",
+    "input": {
+      "external_processing_allowed": false,
+      "target": "external_predictor"
+    },
+    "expected": {
+      "call_allowed": false
+    },
+    "source_refs": [
+      "P03"
+    ],
+    "fixture_kind": "synthetic_contract_test",
+    "scientific_claim": "none_new",
+    "rationale": "Синтетический тест политики доступа."
+  }
+]

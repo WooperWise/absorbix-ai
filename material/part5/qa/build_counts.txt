@@ -1,0 +1,39 @@
+{
+  "pipeline_cases": 160,
+  "base_context_groups": 20,
+  "variants_per_context": 8,
+  "real_compatibility_records": 75,
+  "compatibility_compatible": 59,
+  "compatibility_incompatible": 16,
+  "excipient_only_records": 74,
+  "unique_api_names_in_compatibility": 26,
+  "unique_second_component_names_raw": 58,
+  "derived_contract_tests": 24,
+  "curated_numeric_observations": 12,
+  "primary_source_cards": 20,
+  "split_counts": {
+    "dev": 96,
+    "test": 32,
+    "validation": 32
+  },
+  "scope_counts": {
+    "core": 136,
+    "extension_guard": 24
+  },
+  "scenario_counts": {
+    "dossier_and_next_experiment": 20,
+    "identity_incomplete": 20,
+    "misleading_domain_claim": 20,
+    "hard_constraint": 20,
+    "quantification_gate": 20,
+    "data_or_tool_failure": 20,
+    "negative_experimental_feedback": 20,
+    "governance_edge_case": 20
+  },
+  "full_formulationde_published_counts": {
+    "n": 1105,
+    "compatible": 579,
+    "incompatible": 526
+  },
+  "external_majority_baseline_accuracy": 0.7866666666666666
+}

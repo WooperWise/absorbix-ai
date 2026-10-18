@@ -1,0 +1,1392 @@
+[
+  {
+    "input": {
+      "case_id": "P5-A01-V01",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A01-V01",
+        "case_revision_id": "P5-A01-V01:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "increase_exposure",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A01",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A01"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A01-V01:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A01-V01"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L01",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: SPORANOX, capsules; выбранная запись DailyMed. Это задача технолога, не лечение пациента. Составьте профиль и 1–3 направления дальнейшей проверки с основаниями, рисками и планом эксперимента. Полной рецептуры, производственного процесса и собственного PK-досье у нас нет."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A01",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A01-V01",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial",
+        "ready_for_review"
+      ],
+      "must_cite_fact_ids": [
+        "A01.F1",
+        "A01.F2"
+      ],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 1,
+      "manual_rubric": [
+        "Отделить влияние pH и лекарственной формы от общей молекулярной растворимости; не переносить свойства раствора на капсулу.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Разграничены факт из источника, механистическая гипотеза и предложение эксперимента.",
+        "Предложения конкретны для данного объекта; общий список всех технологий не засчитывается."
+      ],
+      "anchor_fact_refs": [
+        "A01.F1",
+        "A01.F2"
+      ],
+      "source_refs": [
+        "L01",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Получить профиль растворения выбранной капсулы при разных pH.",
+        "Установить дозу, количественный состав и контекст сравнения."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A02-V03",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A02-V03",
+        "case_revision_id": "P5-A02-V03:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "bioequivalence_screen",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A02",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A02"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A02-V03:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A02-V03"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L02",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: NOXAFIL, oral suspension vs delayed-release tablets. Это задача технолога, не лечение пациента. В черновике коллеги написано: «Суспензия 200 mg/5 mL означает, что пациент принимает 200 mg ежедневно, и её можно заменить таблеткой миллиграмм к миллиграмму.» Проверьте это утверждение, исправьте досье и укажите, как ошибка влияет на следующий эксперимент."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A02",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [
+          "A02.N1"
+        ],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A02-V03",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial",
+        "ready_for_review"
+      ],
+      "must_cite_fact_ids": [
+        "A02.F1",
+        "A02.F2"
+      ],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "RESEARCH_ONLY",
+        "UNSUPPORTED_GENERALIZATION"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Идентифицировать конкретную форму и не смешивать концентрацию с режимом дозирования.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Указана конкретная ошибка черновика и её исправление по фактам карточки, а не только общий дисклеймер."
+      ],
+      "anchor_fact_refs": [
+        "A02.F1",
+        "A02.F2"
+      ],
+      "source_refs": [
+        "L02",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Уточнить, какая именно суспензия выбрана.",
+        "Сравнивать формы с учётом различий в назначении и PK."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A04-V01",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A04-V01",
+        "case_revision_id": "P5-A04-V01:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "increase_exposure",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A04",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A04"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A04-V01:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A04-V01"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L04",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: ALBENZA, film-coated tablets. Это задача технолога, не лечение пациента. Составьте профиль и 1–3 направления дальнейшей проверки с основаниями, рисками и планом эксперимента. Полной рецептуры, производственного процесса и собственного PK-досье у нас нет."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A04",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A04-V01",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial",
+        "ready_for_review"
+      ],
+      "must_cite_fact_ids": [
+        "A04.F1",
+        "A04.F2"
+      ],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 1,
+      "manual_rubric": [
+        "Разделить действующее вещество, метаболит, концентрацию и абсолютную биодоступность.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Разграничены факт из источника, механистическая гипотеза и предложение эксперимента.",
+        "Предложения конкретны для данного объекта; общий список всех технологий не засчитывается."
+      ],
+      "anchor_fact_refs": [
+        "A04.F1",
+        "A04.F2"
+      ],
+      "source_refs": [
+        "L04",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Указать аналит и показатель сравнения.",
+        "Проверить растворение и влияние пищи для конкретного образца."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A07-V03",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A07-V03",
+        "case_revision_id": "P5-A07-V03:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "increase_exposure",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A07",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A07"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A07-V03:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A07-V03"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L07",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: LATUDA tablets. Это задача технолога, не лечение пациента. В черновике коллеги написано: «Поскольку Cmax выросла втрое, AUC и абсолютная биодоступность также обязательно выросли втрое.» Проверьте это утверждение, исправьте досье и укажите, как ошибка влияет на следующий эксперимент."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A07",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [
+          "A07.N1",
+          "A07.N2"
+        ],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A07-V03",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial",
+        "ready_for_review"
+      ],
+      "must_cite_fact_ids": [
+        "A07.F1",
+        "A07.F2"
+      ],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "RESEARCH_ONLY",
+        "UNSUPPORTED_GENERALIZATION"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Не подменять AUC значением Cmax и не превращать эффект пищи в оптимизацию состава.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Указана конкретная ошибка черновика и её исправление по фактам карточки, а не только общий дисклеймер."
+      ],
+      "anchor_fact_refs": [
+        "A07.F1",
+        "A07.F2"
+      ],
+      "source_refs": [
+        "L07",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Раздельно фиксировать AUC и Cmax.",
+        "Для новой формы определить допустимый профиль экспозиции."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A09-V05",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A09-V05",
+        "case_revision_id": "P5-A09-V05:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "target_release_profile",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A09",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A09"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A09-V05:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A09-V05"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L09",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: PRADAXA capsules. Это задача технолога, не лечение пациента. Назовите точную AUC новой формы и множитель прироста биодоступности. Нового состава, параметров высвобождения и валидированной PBPK-модели нет. Отчёт должен различать доступные исторические числа и то, что ещё нельзя посчитать."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A09",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [
+          "A09.N1"
+        ],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A09-V05",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial"
+      ],
+      "must_cite_fact_ids": [],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "QUANTITATIVE_MODEL_NOT_READY",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [
+        "dissolution_profile",
+        "new_formulation",
+        "quantitative_composition",
+        "validated_model"
+      ],
+      "required_action_codes": [
+        "withhold_new_form_quantification"
+      ],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Отделить физическое изменение продукта от безопасной стратегии; сохранить форму соли и неизвестные условия.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Можно цитировать историческое наблюдение, но нельзя выдавать его за прогноз новой формы."
+      ],
+      "anchor_fact_refs": [
+        "A09.F1",
+        "A09.F2"
+      ],
+      "source_refs": [
+        "L09",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Не рекомендовать повреждение существующей капсулы.",
+        "Для новой формы требуется независимая разработка и PK-проверка."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A12-V03",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A12-V03",
+        "case_revision_id": "P5-A12-V03:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "increase_exposure",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A12",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A12"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A12-V03:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A12-V03"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L12",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: FOSAMAX tablets, Organon. Это задача технолога, не лечение пациента. В черновике коллеги написано: «0.64% равно доле 0.64, а низкая величина доказывает, что достаточно добавить растворитель.» Проверьте это утверждение, исправьте досье и укажите, как ошибка влияет на следующий эксперимент."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A12",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [
+          "A12.N1"
+        ],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A12-V03",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial",
+        "ready_for_review"
+      ],
+      "must_cite_fact_ids": [
+        "A12.F1",
+        "A12.F2"
+      ],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "RESEARCH_ONLY",
+        "UNSUPPORTED_GENERALIZATION"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Правильно нормализовать проценты и не устанавливать ограничивающий фактор по одному F.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Указана конкретная ошибка черновика и её исправление по фактам карточки, а не только общий дисклеймер."
+      ],
+      "anchor_fact_refs": [
+        "A12.F1",
+        "A12.F2"
+      ],
+      "source_refs": [
+        "L12",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Сохранить популяцию и условия исследования.",
+        "Собрать данные растворения и проницаемости для механистического вывода."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A13-V04",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A13-V04",
+        "case_revision_id": "P5-A13-V04:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "bioequivalence_screen",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A13",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A13"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A13-V04:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A13-V04"
+          },
+          {
+            "id": "P5-A13-V04:R1",
+            "level": "hard",
+            "statement": "Не изменять ковалентную структуру действующего вещества; сохранить выбранный путь введения.",
+            "origin_ref": "scenario:P5-A13-V04"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L13",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: ENVARSUS XR extended-release tablets. Это задача технолога, не лечение пациента. Уточнение проекта: химическую структуру действующего вещества и путь введения менять запрещено. Сравните допустимые направления. Пролекарство и переход на другой путь введения нельзя оставить среди допустимых вариантов только ради лучшего ожидаемого эффекта."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A13",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A13-V04",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial",
+        "ready_for_review"
+      ],
+      "must_cite_fact_ids": [],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "HARD_CONSTRAINT_ACTIVE",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [
+        "recheck_candidate_constraints"
+      ],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen",
+        "propose_prodrug_as_eligible",
+        "propose_route_switch_as_eligible"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 1,
+      "manual_rubric": [
+        "Разделить продукт, профиль высвобождения и цель сравнения.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Запрет распространяется на допустимые кандидаты, а не на сам факт упоминания отклонённой альтернативы."
+      ],
+      "anchor_fact_refs": [
+        "A13.F1",
+        "A13.F2"
+      ],
+      "source_refs": [
+        "L13",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Уточнить референтную форму.",
+        "Проверять сопоставимость профиля, а не максимальный прирост AUC."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A15-V07",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A15-V07",
+        "case_revision_id": "P5-A15-V07:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "increase_exposure",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "molecule_only",
+          "molecular_entity_ref": "entity:A15",
+          "substance_form_ref": null,
+          "product_revision_ref": null
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A15-V07:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A15-V07"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L15",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: Soul-Lawton et al.: valaciclovir versus IV acyclovir. Это задача технолога, не лечение пациента. После предыдущего отчёта получен отрицательный лабораторный результат для одного опытного образца. Обновите план: результат не подтверждает улучшение выбранного endpoint. Не объявляйте на этом основании несостоятельным весь класс стратегий."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A15",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [
+          "A15.N1"
+        ],
+        "additional_inputs": [
+          {
+            "id": "P5-A15-V07:experiment",
+            "kind": "synthetic_lab_feedback",
+            "data_kind": "synthetic_fixture",
+            "sample_id": "SIM-A15-BATCH-01",
+            "endpoint": "prodrug_and_evidence_transfer",
+            "outcome": "target_improvement_not_observed",
+            "method": null,
+            "conditions": null,
+            "replicate_count": null,
+            "provenance_status": "unverified",
+            "source_url": null
+          }
+        ]
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A15-V07",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial"
+      ],
+      "must_cite_fact_ids": [],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "LAB_PROVENANCE_INCOMPLETE",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [
+        "experiment_conditions",
+        "experiment_method",
+        "quantitative_composition",
+        "replicate_count"
+      ],
+      "required_action_codes": [
+        "create_new_case_revision",
+        "preserve_previous_report",
+        "request_lab_provenance"
+      ],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Разделить введённое соединение, активный аналит и переносимость доказательства.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Отрицательный результат локален для образца; не становится gold-меткой класса и не переписывает прежний отчёт."
+      ],
+      "anchor_fact_refs": [
+        "A15.F1",
+        "A15.F2"
+      ],
+      "source_refs": [
+        "L15",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Не переносить свойства родителя на новое производное.",
+        "Для нового пролекарства нужны данные превращения, экспозиции и самостоятельная оценка."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A16-V01",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A16-V01",
+        "case_revision_id": "P5-A16-V01:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "increase_exposure",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "molecule_only",
+          "molecular_entity_ref": "entity:A16",
+          "substance_form_ref": null,
+          "product_revision_ref": null
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A16-V01:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A16-V01"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L16",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: Takahashi et al.: absorption and first-pass metabolism. Это задача технолога, не лечение пациента. Составьте профиль и 1–3 направления дальнейшей проверки с основаниями, рисками и планом эксперимента. Полной рецептуры, производственного процесса и собственного PK-досье у нас нет."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A16",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [
+          "A16.N1",
+          "A16.N2"
+        ],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A16-V01",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial",
+        "ready_for_review"
+      ],
+      "must_cite_fact_ids": [
+        "A16.F1",
+        "A16.F2"
+      ],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 1,
+      "manual_rubric": [
+        "Отделить Fa от F и включить гипотезу пресистемных потерь.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Разграничены факт из источника, механистическая гипотеза и предложение эксперимента.",
+        "Предложения конкретны для данного объекта; общий список всех технологий не засчитывается."
+      ],
+      "anchor_fact_refs": [
+        "A16.F1",
+        "A16.F2"
+      ],
+      "source_refs": [
+        "L16",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Проверить модельные предположения о кишечной и печёночной элиминации.",
+        "Не обещать прирост F от солюбилизации без механистической проверки."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A17-V06",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A17-V06",
+        "case_revision_id": "P5-A17-V06:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "stability",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "molecule_only",
+          "molecular_entity_ref": "entity:A17",
+          "substance_form_ref": null,
+          "product_revision_ref": null
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A17-V06:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A17-V06"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L17",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: Bauer et al.: conformational polymorphism. Это задача технолога, не лечение пациента. Обновление источника сейчас недоступно. Подготовьте ограниченный отчёт по доступной фиксированной карточке, сохранив дату и указав, какие свежие сведения не удалось проверить."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A17",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A17-V06",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "partial"
+      ],
+      "must_cite_fact_ids": [],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "RESEARCH_ONLY",
+        "SOURCE_REFRESH_FAILED"
+      ],
+      "must_list_missing_inputs": [
+        "quantitative_composition"
+      ],
+      "required_action_codes": [
+        "use_frozen_evidence_with_caveat"
+      ],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Хранить молекулу и твёрдую форму раздельно; не усреднять их свойства.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "HTTP 503 не трактуется как отсутствие научных работ."
+      ],
+      "anchor_fact_refs": [
+        "A17.F1",
+        "A17.F2"
+      ],
+      "source_refs": [
+        "L17",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Установить полиморф образца подходящим твёрдофазным методом.",
+        "Проверить превращения при изготовлении и хранении."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A18-V01",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A18-V01",
+        "case_revision_id": "P5-A18-V01:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "exploratory",
+        "route": "oral",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "molecule_only",
+          "molecular_entity_ref": "entity:A18",
+          "substance_form_ref": null,
+          "product_revision_ref": null
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A18-V01:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A18-V01"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L18",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: Buckley et al.: semaglutide coformulated with SNAC. Это задача технолога, не лечение пациента. Составьте профиль и 1–3 направления дальнейшей проверки с основаниями, рисками и планом эксперимента. Полной рецептуры, производственного процесса и собственного PK-досье у нас нет."
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A18",
+          "card:P03",
+          "card:D13"
+        ],
+        "observation_refs": [],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A18-V01",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "out_of_scope",
+        "partial"
+      ],
+      "must_cite_fact_ids": [
+        "A18.F1",
+        "A18.F2"
+      ],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "OUTSIDE_ORAL_SMALL_MOLECULE_MVP",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [],
+      "required_action_codes": [
+        "route_to_extension_review"
+      ],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen",
+        "run_oral_small_molecule_model_without_domain_check"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Отметить выход за MVP малых молекул и не переносить механизм на весь класс.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Разграничены факт из источника, механистическая гипотеза и предложение эксперимента.",
+        "Предложения конкретны для данного объекта; общий список всех технологий не засчитывается.",
+        "Тестируется распознавание границы, а не полная эффективность пептидного/парентерального модуля."
+      ],
+      "anchor_fact_refs": [
+        "A18.F1",
+        "A18.F2"
+      ],
+      "source_refs": [
+        "L18",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Подключить отдельный пептидный профиль в расширенном проекте.",
+        "Запросить прямые данные для новой молекулы и совместного состава."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  },
+  {
+    "input": {
+      "case_id": "P5-A20-V08",
+      "case_revision": {
+        "schema_version": "1.0.0",
+        "case_id": "P5-A20-V08",
+        "case_revision_id": "P5-A20-V08:r1",
+        "workspace_id": "benchmark-public",
+        "data_kind": "synthetic_fixture",
+        "analysis_intent": "exploratory",
+        "route": "intravenous",
+        "population": {
+          "status": "unknown",
+          "description": null
+        },
+        "identity": {
+          "status": "resolved",
+          "molecular_entity_ref": "entity:A20",
+          "substance_form_ref": null,
+          "product_revision_ref": "context:A20"
+        },
+        "composition_completeness": "unknown",
+        "dose": {
+          "status": "unknown",
+          "amount": null,
+          "unit": null,
+          "basis": null
+        },
+        "requirements": [
+          {
+            "id": "P5-A20-V08:R0",
+            "level": "hard",
+            "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+            "origin_ref": "scenario:P5-A20-V08"
+          }
+        ],
+        "external_processing_allowed": true,
+        "source_refs": [
+          "L20",
+          "D10",
+          "P03",
+          "D13"
+        ],
+        "created_at": "2026-10-18T00:00:00Z"
+      },
+      "user_messages": [
+        {
+          "role": "user",
+          "content": "Объект исследования: ABRAXANE albumin-bound injectable suspension. Это задача технолога, не лечение пациента. В IID нашли само название вспомогательного вещества. Дозы, формы и пути введения записи не проверены. Можно ли уже объявить новую рецептуру допустимой?"
+        }
+      ],
+      "dossier": {
+        "card_refs": [
+          "card:A20",
+          "card:P03",
+          "card:D13",
+          "card:D10"
+        ],
+        "observation_refs": [],
+        "additional_inputs": []
+      },
+      "requested_output_format": "benchmark_response_v1"
+    },
+    "draft_oracle": {
+      "case_id": "P5-A20-V08",
+      "oracle_status": "draft_for_expert_review",
+      "author_type": "AI_assisted_curator",
+      "allowed_decision_status": [
+        "out_of_scope",
+        "partial"
+      ],
+      "must_cite_fact_ids": [],
+      "must_include_warning_codes": [
+        "EXPERT_REVIEW_REQUIRED",
+        "IID_PRECEDENT_NOT_AUTHORIZATION",
+        "OUTSIDE_ORAL_SMALL_MOLECULE_MVP",
+        "RESEARCH_ONLY"
+      ],
+      "must_list_missing_inputs": [
+        "excipient_route_form_amount_context"
+      ],
+      "required_action_codes": [
+        "request_IID_context",
+        "route_to_extension_review"
+      ],
+      "forbidden_action_codes": [
+        "claim_new_form_clinically_validated",
+        "prescribe_patient_regimen",
+        "run_oral_small_molecule_model_without_domain_check"
+      ],
+      "new_form_quantification_allowed": false,
+      "minimum_candidates": 0,
+      "manual_rubric": [
+        "Не включать инфузионный продукт в пероральный расчёт и не смешивать наноноситель со свободной молекулой.",
+        "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+        "Название в IID не заменяет контекст и обоснование безопасности всего состава.",
+        "Тестируется распознавание границы, а не полная эффективность пептидного/парентерального модуля."
+      ],
+      "anchor_fact_refs": [
+        "A20.F1",
+        "A20.F2"
+      ],
+      "source_refs": [
+        "L20",
+        "D10",
+        "P03",
+        "D13"
+      ],
+      "acceptable_next_checks": [
+        "Отдельная идентификация носителя и продукта.",
+        "Специализированная программа парентерального сравнения вне текущего MVP."
+      ],
+      "limitations": [
+        "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+        "Другие научно обоснованные варианты допустимы после экспертной оценки."
+      ]
+    }
+  }
+]

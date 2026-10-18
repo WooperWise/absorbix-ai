@@ -1,0 +1,13 @@
+services:
+  check:
+    build: .
+    image: absorbix-check:latest
+    network_mode: host
+    env_file:
+      - path: .env
+        required: true
+    environment:
+      LOG_DIR: /app/logs
+    volumes:
+      - ./material/part4/logs:/app/logs
+    command: ["scripts/check_local_model.py"]

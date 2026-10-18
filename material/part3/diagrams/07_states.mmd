@@ -1,0 +1,15 @@
+stateDiagram-v2
+  [*] --> created
+  created --> queued: предусловия приняты
+  queued --> running: получен lease
+  running --> waiting_input: отсутствуют сведения
+  waiting_input --> queued: разрешено продолжение
+  running --> retry_scheduled: безопасный временный сбой
+  retry_scheduled --> queued: backoff
+  running --> needs_reconciliation: внешний исход неизвестен
+  needs_reconciliation --> queued: безопасный повтор подтверждён
+  running --> succeeded: обязательные шаги выполнены
+  running --> partial: допустим неполный результат
+  running --> failed: неустранимый сбой
+  queued --> cancelled: отмена
+  running --> cancelled: отмена подтверждена

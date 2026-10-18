@@ -1,0 +1,9 @@
+flowchart TD
+  W["Workspace / Project"] --> C["Case / CaseRevision"]
+  C --> P["ProductRevision"] --> F["SubstanceForm"] --> M["MolecularEntity"]
+  S["SourceRecord / Snapshot"] --> E["EvidenceSpan"] --> O["Observation"]
+  O --> R["CalculationRun / SimulationRun"]
+  O --> A["Claim / Assessment"]
+  R --> A --> K["CandidateRevision"]
+  C --> K --> D["ReviewDecision / ReportBundle"]
+  S --> D

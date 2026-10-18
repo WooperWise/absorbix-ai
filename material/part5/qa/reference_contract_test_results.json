@@ -1,0 +1,191 @@
+{
+  "kind": "reference_fixture_logic_not_user_pipeline",
+  "total": 24,
+  "passed": 24,
+  "results": [
+    {
+      "test_id": "U01",
+      "actual": {
+        "value": 0.0064,
+        "unit": "1"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U02",
+      "actual": {
+        "value": 0.542,
+        "unit": "1"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U03",
+      "actual": {
+        "value": 0.6,
+        "unit": "1"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U04",
+      "actual": {
+        "value": 0.66,
+        "unit": "1"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U05",
+      "actual": {
+        "value": 88.0,
+        "unit": "%"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U06",
+      "actual": {
+        "value": 28.000000000000004,
+        "unit": "%"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U07",
+      "actual": {
+        "value": 1.8,
+        "unit": "g/L"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U08",
+      "actual": {
+        "value": 1800.0,
+        "unit": "ug/mL"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U09",
+      "actual": {
+        "value": 40,
+        "unit": "g/L"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U10",
+      "actual": {
+        "value": 40000,
+        "unit": "ug/mL"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U11",
+      "actual": {
+        "value": 40.0,
+        "unit": "mg/mL"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U12",
+      "actual": {
+        "amount": null,
+        "status": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U13",
+      "actual": {
+        "merge_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U14",
+      "actual": {
+        "merge_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U15",
+      "actual": {
+        "merge_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U16",
+      "actual": {
+        "merge_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U17",
+      "actual": {
+        "type": "SD",
+        "ci95": null
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U18",
+      "actual": {
+        "status": "out_of_domain"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U19",
+      "actual": {
+        "status": "out_of_domain"
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U20",
+      "actual": {
+        "status": "technical_failure",
+        "no_evidence_found": null
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U21",
+      "actual": {
+        "is_measurement": false
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U22",
+      "actual": {
+        "verdict": "insufficient_context",
+        "approved_recipe": false
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U23",
+      "actual": {
+        "incidence": null,
+        "causality_established": false
+      },
+      "passed": true
+    },
+    {
+      "test_id": "U24",
+      "actual": {
+        "call_allowed": false
+      },
+      "passed": true
+    }
+  ]
+}

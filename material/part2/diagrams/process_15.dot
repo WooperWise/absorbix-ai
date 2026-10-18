@@ -1,0 +1,22 @@
+digraph solution_15 {
+	bgcolor=white fontcolor="#142D45" fontname="DejaVu Sans" fontsize=18 label="15. Ros et al.: полуавтономный формулятор
+Экспериментальное исследование 2025; не готовый SaaS" labeljust=l labelloc=t nodesep=0.25 pad=0.25 rankdir=LR ranksep=0.40 splines=polyline
+	node [color="#8799AC" fillcolor="#F2F6FA" fontname="DejaVu Sans" fontsize=14 height=0.72 margin="0.13,0.13" shape=box style="rounded,filled" width=2.4]
+	edge [arrowsize=.75 color="#4B657E" fontname="DejaVu Sans" fontsize=10 penwidth=1.4]
+	0 [label="Пространство составов
+и начальные точки"]
+	1 [label="GP-модель
++ байесовский выбор"]
+	2 [label="OT-2 + анализ
+растворимости"]
+	3 [label="Повторное ручное
+подтверждение лидеров" fillcolor=white style="rounded,dashed"]
+	0 -> 1
+	1 -> 2
+	2 -> 3
+	2 -> 1 [label="Измерения новых составов →
+обновление модели" constraint=false style=dashed]
+	label="15. Ros et al.: полуавтономный формулятор
+Экспериментальное исследование 2025; не готовый SaaS
+Источники: S22, S42"
+}

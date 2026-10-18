@@ -1,0 +1,112 @@
+{
+  "input": {
+    "case_id": "P5-A01-V01",
+    "case_revision": {
+      "schema_version": "1.0.0",
+      "case_id": "P5-A01-V01",
+      "case_revision_id": "P5-A01-V01:r1",
+      "workspace_id": "benchmark-public",
+      "data_kind": "synthetic_fixture",
+      "analysis_intent": "increase_exposure",
+      "route": "oral",
+      "population": {
+        "status": "unknown",
+        "description": null
+      },
+      "identity": {
+        "status": "resolved",
+        "molecular_entity_ref": "entity:A01",
+        "substance_form_ref": null,
+        "product_revision_ref": "context:A01"
+      },
+      "composition_completeness": "unknown",
+      "dose": {
+        "status": "unknown",
+        "amount": null,
+        "unit": null,
+        "basis": null
+      },
+      "requirements": [
+        {
+          "id": "P5-A01-V01:R0",
+          "level": "hard",
+          "statement": "Исследовательская поддержка технолога: без назначения лечения и без объявления новой формы безопасной.",
+          "origin_ref": "scenario:P5-A01-V01"
+        }
+      ],
+      "external_processing_allowed": true,
+      "source_refs": [
+        "L01",
+        "P03",
+        "D13"
+      ],
+      "created_at": "2026-10-18T00:00:00Z"
+    },
+    "user_messages": [
+      {
+        "role": "user",
+        "content": "Объект исследования: SPORANOX, capsules; выбранная запись DailyMed. Это задача технолога, не лечение пациента. Составьте профиль и 1–3 направления дальнейшей проверки с основаниями, рисками и планом эксперимента. Полной рецептуры, производственного процесса и собственного PK-досье у нас нет."
+      }
+    ],
+    "dossier": {
+      "card_refs": [
+        "card:A01",
+        "card:P03",
+        "card:D13"
+      ],
+      "observation_refs": [],
+      "additional_inputs": []
+    },
+    "requested_output_format": "benchmark_response_v1"
+  },
+  "draft_oracle": {
+    "case_id": "P5-A01-V01",
+    "oracle_status": "draft_for_expert_review",
+    "author_type": "AI_assisted_curator",
+    "allowed_decision_status": [
+      "partial",
+      "ready_for_review"
+    ],
+    "must_cite_fact_ids": [
+      "A01.F1",
+      "A01.F2"
+    ],
+    "must_include_warning_codes": [
+      "EXPERT_REVIEW_REQUIRED",
+      "RESEARCH_ONLY"
+    ],
+    "must_list_missing_inputs": [
+      "quantitative_composition"
+    ],
+    "required_action_codes": [],
+    "forbidden_action_codes": [
+      "claim_new_form_clinically_validated",
+      "prescribe_patient_regimen"
+    ],
+    "new_form_quantification_allowed": false,
+    "minimum_candidates": 1,
+    "manual_rubric": [
+      "Отделить влияние pH и лекарственной формы от общей молекулярной растворимости; не переносить свойства раствора на капсулу.",
+      "Ключевые утверждения связаны с конкретной формой, условиями и источником; неизвестное не домыслено.",
+      "Разграничены факт из источника, механистическая гипотеза и предложение эксперимента.",
+      "Предложения конкретны для данного объекта; общий список всех технологий не засчитывается."
+    ],
+    "anchor_fact_refs": [
+      "A01.F1",
+      "A01.F2"
+    ],
+    "source_refs": [
+      "L01",
+      "P03",
+      "D13"
+    ],
+    "acceptable_next_checks": [
+      "Получить профиль растворения выбранной капсулы при разных pH.",
+      "Установить дозу, количественный состав и контекст сравнения."
+    ],
+    "limitations": [
+      "Это критерии поведения в конкретном досье, не валидированная оптимальная рецептура.",
+      "Другие научно обоснованные варианты допустимы после экспертной оценки."
+    ]
+  }
+}

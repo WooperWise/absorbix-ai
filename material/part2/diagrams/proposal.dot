@@ -1,0 +1,33 @@
+digraph proposal {
+	bgcolor=white fontname="DejaVu Sans" fontsize=21 label="Предлагаемая архитектура дипломного модуля
+Авторский проектный вывод — не описание конкурента" labelloc=t nodesep=.3 pad=.25 rankdir=TB ranksep=.35
+	node [color="#8799AC" fillcolor="#F2F6FA" fontname="DejaVu Sans" fontsize=15 margin=".18,.14" shape=box style="rounded,filled"]
+	edge [color="#4B657E" fontname="DejaVu Sans" fontsize=11]
+	i [label="Идентичность: молекула → твёрдая форма → продукт → доза и цель"]
+	d [label="Досье наблюдений: значение + условия + источник + версия"]
+	r [label="Правила и ограничения
+IID / контекст продукта"]
+	m [label="Предикторы
+прогноз ≠ измерение"]
+	k [label="Каталог стратегий
+прямые данные / аналогия"]
+	h [label="Сопоставление альтернатив
+и явное обозначение неопределённости"]
+	p [label="PBPK / PBBM только при достаточных входных данных"]
+	e [label="Эксперт: решение о следующем эксперименте"]
+	x [label="Измерения → независимая проверка → обновление досье"]
+	o [label="Отчёт: источники, версии, ограничения, причины отказа"]
+	i -> d
+	d -> r
+	d -> m
+	d -> k
+	r -> h
+	m -> h
+	k -> h
+	h -> p
+	p -> e
+	h -> e
+	e -> o
+	e -> x
+	x -> d [label="Новые данные, не подмена исходной проверки" style=dashed]
+}

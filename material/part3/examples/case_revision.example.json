@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "CASE-DEMO-001",
+  "case_revision_id": "CASE-DEMO-001-R1",
+  "workspace_id": "WS-DEMO",
+  "data_kind": "synthetic_fixture",
+  "analysis_intent": "exploratory",
+  "route": "oral",
+  "population": {
+    "status": "unknown",
+    "description": null
+  },
+  "identity": {
+    "status": "molecule_only",
+    "molecular_entity_ref": "MOLECULE-FIXTURE-001",
+    "substance_form_ref": null,
+    "product_revision_ref": null
+  },
+  "composition_completeness": "unknown",
+  "dose": {
+    "status": "unknown",
+    "amount": null,
+    "unit": null,
+    "basis": null
+  },
+  "requirements": [
+    {
+      "id": "REQ-DEMO-001",
+      "level": "hard",
+      "statement": "Не передавать тестовый кейс внешним сервисам.",
+      "origin_ref": "fixture-user-input"
+    }
+  ],
+  "external_processing_allowed": false,
+  "source_refs": [
+    "SNAPSHOT-FIXTURE-001"
+  ],
+  "created_at": "2026-10-18T00:00:00Z"
+}

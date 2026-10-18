@@ -1,0 +1,23 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.30", ranksep="0.55", splines=polyline, fontname="DejaVu Sans", fontsize=18, labelloc="t", label="Граница доверия к внешним документам и LLM", dpi=140];
+node [shape=box, style="rounded,filled", fillcolor="#f5f5f5", color="#555555", fontname="DejaVu Sans", fontsize=12, margin="0.16,0.12"];
+edge [fontname="DejaVu Sans", fontsize=10, color="#555555", arrowsize=0.7];
+outside [label="Недоверенный файл / статья / страница\nможет содержать вредоносные инструкции"];
+intake [label="Контролируемое получение\nправа, URL, размер, MIME, hash"];
+parse [label="Карантин и изолированный parser\nбез произвольного доступа к сети"];
+text [label="Текст как данные\nникаких прав на управление системой"];
+llm [label="LLM: извлечение / объяснение\nограниченный контекст без секретов"];
+typed [label="Проверка схемы + предметных правил\nпроверка ссылок на разрешённые снимки"];
+gate [label="Policy gate\nправа, бюджет, разрешённый инструмент"];
+runner [label="Контролируемый runner\nникакого произвольного shell"];
+review [label="Экспертиза и безопасный экспорт\nочистка активного содержимого"];
+outside -> intake;
+intake -> parse;
+parse -> text;
+text -> llm [label="недоверенное содержание"];
+llm -> typed [label="предложение, не команда"];
+typed -> gate [label="запрос действия"];
+gate -> runner [label="разрешено политикой"];
+runner -> typed [label="типизированный результат"];
+typed -> review [label="проверенные ссылки и ограничения"];
+}

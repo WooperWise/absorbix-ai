@@ -1,0 +1,250 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "four_main_chapters",
+      "passed": true,
+      "details": [
+        "# Глава 1. Видение целого решения и схема процесса",
+        "# Глава 2. Архитектура решения",
+        "# Глава 3. На какие модули разбить решение и почему",
+        "# Глава 4. Какой результат должен давать каждый модуль"
+      ]
+    },
+    {
+      "check": "nineteen_module_passports",
+      "passed": true,
+      "details": [
+        [
+          "1",
+          "01"
+        ],
+        [
+          "2",
+          "02"
+        ],
+        [
+          "3",
+          "03"
+        ],
+        [
+          "4",
+          "04"
+        ],
+        [
+          "5",
+          "05"
+        ],
+        [
+          "6",
+          "06"
+        ],
+        [
+          "7",
+          "07"
+        ],
+        [
+          "8",
+          "08"
+        ],
+        [
+          "9",
+          "09"
+        ],
+        [
+          "10",
+          "10"
+        ],
+        [
+          "11",
+          "11"
+        ],
+        [
+          "12",
+          "12"
+        ],
+        [
+          "13",
+          "13"
+        ],
+        [
+          "14",
+          "14"
+        ],
+        [
+          "15",
+          "15"
+        ],
+        [
+          "16",
+          "16"
+        ],
+        [
+          "17",
+          "17"
+        ],
+        [
+          "18",
+          "18"
+        ],
+        [
+          "19",
+          "19"
+        ]
+      ]
+    },
+    {
+      "check": "no_unexpanded_placeholders",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "no_raw_chat_citation_markup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all_local_files_exist",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "all_explicit_anchors_exist",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "ten_project_diagrams",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_01_process",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_02_context",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_03_containers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_04_data",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_05_provenance",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_06_job",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_07_states",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_08_modules",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_09_trust",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "diagram_assets_10_validation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all_registered_sources_used",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "all_primary_source_urls_present",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "contract_checks_passed",
+      "passed": true,
+      "details": 22
+    }
+  ],
+  "main_report_bytes": 291008,
+  "main_report_words_whitespace": 20114,
+  "main_body_words_whitespace": 17152,
+  "tables": 16,
+  "mermaid_blocks": 10,
+  "external_primary_sources": 47,
+  "unique_external_urls_in_report": 59,
+  "diagram_dimensions": [
+    {
+      "name": "01_process",
+      "width": 1556,
+      "height": 2125
+    },
+    {
+      "name": "02_context",
+      "width": 2016,
+      "height": 852
+    },
+    {
+      "name": "03_containers",
+      "width": 1919,
+      "height": 1513
+    },
+    {
+      "name": "04_data",
+      "width": 1397,
+      "height": 1503
+    },
+    {
+      "name": "05_provenance",
+      "width": 1033,
+      "height": 1363
+    },
+    {
+      "name": "06_job",
+      "width": 1114,
+      "height": 1386
+    },
+    {
+      "name": "07_states",
+      "width": 1631,
+      "height": 1244
+    },
+    {
+      "name": "08_modules",
+      "width": 1817,
+      "height": 1548
+    },
+    {
+      "name": "09_trust",
+      "width": 1517,
+      "height": 1445
+    },
+    {
+      "name": "10_validation",
+      "width": 1690,
+      "height": 1629
+    }
+  ],
+  "limitations": [
+    "Не выполнен запуск серверной платформы или научных моделей.",
+    "Проверка локальных ссылок не означает проверки научного содержания каждого источника."
+  ]
+}

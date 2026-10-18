@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "observation_id": "OBS-FIXTURE-001",
+  "workspace_id": "WS-DEMO",
+  "subject_ref": "MOLECULE-FIXTURE-001",
+  "endpoint": "fixture.solubility",
+  "origin_kind": "synthetic_fixture",
+  "value": {
+    "kind": "numeric",
+    "number": 1.25,
+    "unit": "mg/mL"
+  },
+  "quantity_basis": "Условное вещество фикстуры; не лекарственный продукт.",
+  "conditions": {
+    "pH": 2.0,
+    "temperature": {
+      "value": 25.0,
+      "unit": "Cel"
+    },
+    "medium": "Условная тестовая среда"
+  },
+  "method_description": "Синтетический контрактный пример; физическое измерение не проводилось.",
+  "source_snapshot_ref": "SNAPSHOT-FIXTURE-001",
+  "evidence_locator": {
+    "kind": "line_range",
+    "start_line": 1,
+    "end_line": 4
+  },
+  "original_value_text": "1.25 mg/mL при pH 2.0 и 25 Cel",
+  "review_status": "draft",
+  "limitations": [
+    "Используется только в тестах; не включать в исследовательский корпус."
+  ],
+  "created_at": "2026-10-18T00:00:00Z"
+}

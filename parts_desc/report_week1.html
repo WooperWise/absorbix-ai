@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Отчёт недели 1 — absorbix-ai</title>
+<style>
+:root{--ink:#1a2333;--mut:#5b6572;--line:#d8dee8;--bg:#f7f9fc;--acc:#0b5cad;--ok:#1d7a3e;--warn:#a05a00;--bad:#b02a2a}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+.wrap{max-width:1000px;margin:0 auto;padding:28px 20px 80px}
+header.hero{background:linear-gradient(135deg,#0e2a47,#0b5cad);color:#fff;border-radius:14px;padding:28px 30px;margin-bottom:26px}
+header.hero h1{margin:0 0 6px;font-size:26px}
+header.hero p{margin:0;opacity:.85}
+nav.toc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:26px;display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{text-decoration:none;color:var(--acc);background:#eef4fb;border-radius:8px;padding:4px 12px;font-size:14px}
+nav.toc a:hover{background:#dde9f7}
+section{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin-bottom:20px}
+h2{margin:0 0 14px;font-size:20px;border-bottom:2px solid var(--acc);padding-bottom:8px}
+h3{font-size:16px;margin:20px 0 8px}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:#eef2f8}
+.badge{display:inline-block;border-radius:6px;padding:1px 9px;font-size:12.5px;font-weight:600;white-space:nowrap}
+.b-ok{background:#e2f3e8;color:var(--ok)}.b-warn{background:#fdf0dd;color:var(--warn)}.b-bad{background:#fbe4e4;color:var(--bad)}
+details{border:1px solid var(--line);border-radius:9px;margin:10px 0;background:#fbfcfe}
+details summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--acc)}
+details[open] summary{border-bottom:1px solid var(--line)}
+details .in{padding:6px 16px 14px}
+code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px}
+code{background:#eef2f8;border-radius:4px;padding:1px 5px}
+pre{background:#0e2a47;color:#dbe7f5;border-radius:9px;padding:14px;overflow:auto}
+.mut{color:var(--mut)}
+.fail{background:#fdf3f3;border-left:4px solid var(--bad);padding:10px 14px;border-radius:0 8px 8px 0;margin:10px 0}
+.win{background:#eff8f1;border-left:4px solid var(--ok);padding:10px 14px;border-radius:0 8px 8px 0;margin:10px 0}
+ul{padding-left:22px;margin:8px 0}
+li{margin:4px 0}
+footer{color:var(--mut);font-size:13px;text-align:center;margin-top:30px}
+.btn-all{cursor:pointer;border:0;background:var(--acc);color:#fff;border-radius:8px;padding:6px 14px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+<h1>От проблемы к архитектуре и первой фиче</h1>
+<p>Отчёт недели 1 · ИИ-платформа оптимизации всасывания и лекарственной формы препаратов (absorbix-ai) · 18 октября 2026</p>
+</header>
+
+<nav class="toc">
+<a href="#summary">Сводная таблица</a>
+<a href="#b1">Проблема и метрики</a>
+<a href="#b2">Рынок</a>
+<a href="#b3">Архитектура</a>
+<a href="#b7">Первая фича</a>
+<a href="#b5">Данные</a>
+<a href="#b6">Хранилище (RAG)</a>
+<a href="#env">Окружение и модели</a>
+<a href="#fails">Неудачные попытки</a>
+<a href="#src">Источники</a>
+<a href="#next">План на следующую неделю</a>
+<button class="btn-all" onclick="document.querySelectorAll('details').forEach(d=>d.open=true)">Раскрыть всё</button>
+</nav>
+
+<section id="summary">
+<h2>Сводная таблица недели</h2>
+<table>
+<tr><th>Блок</th><th>Что делали</th><th>Результат</th><th>Статус</th></tr>
+<tr><td>1. Погружение</td><td>Изучение предметной области, научной литературы, руководств и баз; формулировка метрик</td><td>Отчёт этапа 1: аннотированный реестр 54 источников с границами применимости каждого</td><td><span class="badge b-ok">сделано</span></td></tr>
+<tr><td>2. Рынок</td><td>Сравнение существующих решений: экспертный процесс, автоматизация, ИИ, механистические модели, CDMO</td><td>Отчёт этапа 2: 15+ разобранных решений, 20 схем процессов, 2 графика, критерии «что работает»</td><td><span class="badge b-ok">сделано</span></td></tr>
+<tr><td>3. Архитектура</td><td>Проектирование целого решения: модули, контракты данных, границы доверия</td><td>Отчёт этапа 3: 19 модулей, 10 схем (C4), 5 JSON Schema + фрагмент OpenAPI, 47 источников</td><td><span class="badge b-ok">сделано</span></td></tr>
+<tr><td>4. Окружение</td><td>Репозиторий GitHub, uv + Docker, доступ к моделям, инфраструктурные тесты</td><td>Локальная модель проверена (5/5 из uv и из Docker); Gemini заблокирован регионом IP — задокументировано</td><td><span class="badge b-warn">сделано, со сменой пути</span></td></tr>
+<tr><td>5. Данные</td><td>Методика реалистичных сценариев на реальных источниках; генерация и проверка покрытия</td><td>Датасет v1.0: 160 сценариев / 20 контекстов, 75 опубликованных пар совместимости, 24 карточки источников; статус — для экспертного согласования</td><td><span class="badge b-ok">сделано</span></td></tr>
+<tr><td>6. RAG-хранилище</td><td>Классификация типов документов, проект хранилища, обоснование применения RAG</td><td>Проектный документ: где retrieval нужен, где решают API; векторный индекс отложен до этапа мониторинга с обоснованием</td><td><span class="badge b-ok">сделано</span></td></tr>
+<tr><td>7. Первая фича</td><td>Детальное описание первой фичи: видение, обоснование выбора, архитектура</td><td>Документ этапа 7: вертикальный срез «кейс → профиль → диагноз ограничивающего фактора → кандидаты», 7 шагов, 6 компонентов</td><td><span class="badge b-ok">сделано</span></td></tr>
+</table>
+<p class="mut">Материалы всех блоков — в репозитории проекта (material/part1–part7) и приложены к отчёту.</p>
+</section>
+
+<section id="b1">
+<h2>1. Проблема и метрики</h2>
+<p><b>Проблема.</b> Подбор лекарственной формы, солей, пролекарств и вспомогательных веществ для повышения всасывания — предэкспериментальное решение, которое сегодня опирается на опыт специалиста и разрозненные источники. Один запрос к LLM его не решает: модели путают свойства молекул, придумывают исследования и не различают сильные и слабые доказательства.</p>
+<details><summary>Как ставится задача (по ТЗ)</summary><div class="in">
+<p>Пользователь — фармаколог или технолог — указывает препарат (МНН, торговое название или структуру) и получает: профиль физико-химических свойств, класс по биофармацевтической классификации (BCS), диагностику ограничивающего фактора всасывания и варианты оптимизации с уровнями доказательности. Результат — гипотезы и обоснования для проверки, а не замена эксперимента.</p>
+</div></details>
+<details><summary>Метрики успеха (из ТЗ, приняты как целевые)</summary><div class="in">
+<ul>
+<li>доля известных успешных стратегий оптимизации, воспроизведённых платформой на тестовом наборе;</li>
+<li>точность диагностики ограничивающего фактора относительно экспертной оценки;</li>
+<li>доля выводов с проверяемым источником и корректной оценкой доказательности;</li>
+<li>сравнение с базовой линией (LLM без обвязки) по числу неподтверждённых утверждений;</li>
+<li>оценка полезности вариантов профильным экспертом.</li>
+</ul>
+</div></details>
+</section>
+
+<section id="b2">
+<h2>2. Рынок: как проблему решают сейчас</h2>
+<p>Разобрано 15+ решений пяти классов: экспертный процесс, цифровая автоматизация (FormulationDE, ADMETlab), механистическое моделирование (GastroPlus, Simcyp, PK-Sim/OSP), интегрированные программы (Certara, Quotient Sciences) и LLM-агенты (ChemCrow). Для каждого — функции, эффективность, схема процесса.</p>
+<details><summary>Ключевые выводы сравнения</summary><div class="in">
+<ul>
+<li>«Самого точного ИИ» без общей задачи не существует: выбор стратегии, прогноз свойства, моделирование экспозиции и подготовка решения — разные рынки с разными критериями.</li>
+<li>Открытые механистические инструменты (PK-Sim/OSP) дают управляемость и повторяемость, но не заменяют модельные данные конкретного препарата.</li>
+<li>LLM без инструментов зафиксирована как слабая базовая линия; связка «модель + инструменты + проверяемые источники» — рабочее направление (ChemCrow).</li>
+<li>Ниша проекта: проверяемое предэкспериментальное решение с уровнями доказательности — не закрыта ни одним из разобранных решений.</li>
+</ul>
+</div></details>
+</section>
+
+<section id="b3">
+<h2>3. Архитектура целого решения</h2>
+<p>Спроектирована архитектура из <b>19 модулей</b> (M01–M19) с контрактами данных и границами доверия; 10 схем в представлениях C4, 5 JSON Schema и фрагмент OpenAPI. Ключевые решения:</p>
+<ul>
+<li><b>Детерминированный каркас с ограниченными LLM-действиями</b>: модель извлекает, формулирует и объясняет; код проверяет, решает и утверждает. Автономность — только после тестов (ADR-05).</li>
+<li><b>Наблюдения с провенансом</b>: каждый факт несёт origin_kind (измерение / расчёт / предсказание / суждение) и ссылку на источник; «извлечение LLM» не превращает текст статьи в проверенный факт автоматически.</li>
+<li><b>Границы доступа</b>: workspace-изоляция частных данных; секреты и чужие документы не попадают ни в модель, ни в логи.</li>
+<li><b>Валидация как отдельный модуль</b> (M19): качество доказывается для конкретной версии и области, а не «вообще».</li>
+</ul>
+</section>
+
+<section id="b7">
+<h2>4. Первая фича: подробный разбор</h2>
+<p><b>Вертикальный срез:</b> исследовательский кейс → профиль препарата → диагностика ограничивающего фактора всасывания → до трёх обоснованных кандидатов стратегий → ответ по контракту датасета.</p>
+<details open><summary>Видение</summary><div class="in">
+<p>Фича отвечает на главный вопрос технолога: <i>какие варианты изменения препарата разумно проверить экспериментально, на основании каких данных и при каких ограничениях</i>. Не список советов, а экономика эксперимента: каждый вывод — со ссылкой на факт досье, каждая гипотеза — помечена как гипотеза, численные обещания отсутствуют до появления расчётной модели. Система умеет отказываться: неполное досье → уточняющий вопрос со списком недостающего, а не выдумка.</p>
+</div></details>
+<details><summary>Почему выбрана первой</summary><div class="in">
+<ul>
+<li>ядро ценности из ТЗ: профиль и диагностика — первые пункты пользовательского сценария;</li>
+<li>центр архитектуры: модули M06 (профиль) и M07 (оценка ограничивающих факторов);</li>
+<li>проверяема формальным оценщиком датасета без новой разметки;</li>
+<li>изолирована от внешних сетей — работает на фиксированном досье.</li>
+</ul>
+</div></details>
+<details><summary>Архитектура фичи: шаги, компоненты, данные</summary><div class="in">
+<pre>кейс (dev-сплит)
+ → 1. адаптер кейса: сборка досье            [код]
+ → 2. роутер: готов / неполный / вне рамок   [код]
+ → 3. извлечение фактов из карточек          [LLM + схема]
+ → 4. проверка ссылок fact_refs              [код]
+ → 5. профиль + диагноз ограничивающего      [правила + LLM-объяснение]
+ → 6. кандидаты ≤3 с опорой на факты         [LLM + схема]
+ → 7. сборка ответа, валидация JSON-схемой   [код]</pre>
+<p><b>Вход:</b> кейс датасета (намерение, путь введения, требования, текст задачи) + карточки источников с провенансом. <b>Выход:</b> JSON по схеме benchmark_response: статус решения, утверждения со ссылками, предупреждения, недостающие входы, кандидаты. <b>Где модель:</b> только извлечение, формулирование и объяснение — всегда со structured output; решения принимает код. <b>Численные прогнозы:</b> пусто, расчётной модели нет — честная позиция, не уклонение.</p>
+<p class="mut">Код не написан — задание блока 7 требует детальное описание; реализация — план следующей недели.</p>
+</div></details>
+</section>
+
+<section id="b5">
+<h2>5. Данные</h2>
+<p>Собран исследовательский датасет <b>v1.0.0</b> для проверки сквозного процесса решения (методика: фиксированные карточки-парафразы реальных источников + фиксированные преобразования контекстов):</p>
+<table>
+<tr><th>Набор</th><th>Объём</th><th>Назначение</th></tr>
+<tr><td>Основные сценарии</td><td>160 сценариев / 20 контекстов (8 вариантов на контекст, включая неполные досье и проверки отказа)</td><td>Сквозной тест процесса принятия решения</td></tr>
+<tr><td>Пары совместимости</td><td>75 опубликованных авторских меток (FormulationDE, Table S1)</td><td>Внешний challenge для предиктора совместимости</td></tr>
+<tr><td>Карточки источников</td><td>20 предметных + 4 общие (DailyMed и др., с SHA-256)</td><td>Фиксированное досье кейсов</td></tr>
+<tr><td>Контрактные фикстуры</td><td>24 проверки (единицы, границы доступа, неизвестные данные)</td><td>Контроль контрактов</td></tr>
+<tr><td>Разбиение</td><td>dev 96 / validation 32 / test 32</td><td>Варианты контекста не разделены; разметка — draft_for_expert_review</td></tr>
+</table>
+<p class="mut">Пакет с отчётом, генераторами, QA и манифестом SHA-87 файлов — material/part5; рабочая копия датасета — data/ репозитория.</p>
+</section>
+
+<section id="b6">
+<h2>6. Хранилище документов (RAG)</h2>
+<p>Ответ на вопрос «нужен ли RAG» дан по компонентам платформы, а не «вообще»:</p>
+<ul>
+<li><b>Первая фича</b> — фиксированное досье и справочники по API (PubChem, DailyMed): семантический поиск не нужен.</li>
+<li><b>Мониторинг трендов</b> (более поздний этап) — главный потребитель семантического retrieval: поток статей, патентов, новостей.</li>
+<li><b>Каталог стратегий</b> — структурированные определения с выбором по правилам и метаданным.</li>
+</ul>
+<p>Классифицированы 7 типов документов (нормативные руководства, лейблы, статьи, патенты, справочные базы, новости, частные документы) с назначением, правами и способом обработки. Единица хранения — не «чанк», а наблюдение с провенансом (источник, локатор, уровень доступа, версия). Векторный индекс отложен до этапа мониторинга — по отсутствию потребности, не по нехватке ресурсов.</p>
+</section>
+
+<section id="env">
+<h2>Рабочее окружение и доступ к моделям</h2>
+<div class="win"><b>Репозиторий:</b> github.com/WooperWise/absorbix-ai — uv-проект (Python 3.12) с Docker; проверочные скрипты, датасет, документация.</div>
+<div class="win"><b>Локальная модель (рабочее решение):</b> vLLM-сервер с Qwen3.8-27B-FP8 на GPU (64 ГБ) за OpenAI-совместимым API. Smoke-тест из окружения uv — 5/5 проверок; из Docker-контейнера — 5/5, включая structured output по JSON-схеме (извлечение трёх полей из русского текста с валидацией). Лог: material/part4/logs/check_local_model_2026-10-18.log (+ _docker.log).</div>
+<div class="fail"><b>Google AI Studio (неудачная попытка):</b> ключ free tier получен и авторизуется, но Generative Language API отклоняет запросы из региона IP машины (Yandex Cloud, РФ): «User location is not supported». Лог: check_gemini_key_2026-10-18.log. Решение (прокси / Vertex AI / полный отказ) отложено; работа переведена на локальную модель.</div>
+<h3>Какая модель для каких задач</h3>
+<table>
+<tr><th>Модель</th><th>Где работает</th><th>Класс</th><th>Для каких задач</th><th>Почему</th></tr>
+<tr><td>Qwen3.8-27B-FP8</td><td>локально, vLLM, GPU 64 ГБ</td><td>единая рабочая модель пилота</td><td>извлечение фактов по схеме, формулирование, объяснения</td><td>развёрнута и проверена; structured output подтверждён; данные не покидают машину</td></tr>
+<tr><td>Gemini (free tier)</td><td>Google AI Studio</td><td>облачная, резерв</td><td>— (заблокирована регионом)</td><td>ключ сохранён в .env; вернуться при прокси/Vertex</td></tr>
+</table>
+<h3>Секреты и лимиты</h3>
+<ul>
+<li>Ключи — только в .env (в git и Docker-образ не попадают, проверено .gitignore/.dockerignore); в логи ключи не пишутся (маскируются).</li>
+<li>Локальная модель — без квот и оплаты; ограничение одно: последовательная обработка на одной GPU.</li>
+<li>Лимиты Gemini free tier проверить не удалось — API недоступен из региона (см. выше).</li>
+</ul>
+</section>
+
+<section id="fails">
+<h2>Неудачные и незавершённые попытки (фиксируются сознательно)</h2>
+<table>
+<tr><th>Попытка</th><th>Что произошло</th><th>Статус</th></tr>
+<tr><td>Google AI Studio API</td><td>Регион IP не поддерживается; 2/3 проверок пройдено, вызовы заблокированы</td><td><span class="badge b-bad">не вышло</span> отложено, заменено локальной моделью</td></tr>
+<tr><td>Загрузка полного CSV AqSolDB (9982 строки)</td><td>Сетевая ошибка разрешения имени хоста; включён необязательный скрипт загрузки с проверкой SHA-256</td><td><span class="badge b-warn">не вышло</span> тесты датасета от неё не зависят</td></tr>
+<tr><td>Colab / Kaggle</td><td>Не подключались: модель работает локально на GPU, расчёты CPU — обоснованный пропуск с опорой на архитектуру</td><td><span class="badge b-warn">обоснованный пропуск</span></td></tr>
+</table>
+</section>
+
+<section id="src">
+<h2>Источники</h2>
+<p class="mut">Полные аннотированные реестры — в отчётах этапов 1–3 (54 + 47 + 47 источников с границами применимости). Ключевые:</p>
+<details><summary>Регуляторные базы и руководства</summary><div class="in">
+<ul>
+<li>FDA Inactive Ingredient Database — accessdata.fda.gov/scripts/cder/iig</li>
+<li>FDA Orange Book — fda.gov/drugs/drug-approvals-and-databases</li>
+<li>DailyMed (инструкции и составы; REST API v2 проверен) — dailymed.nlm.nih.gov</li>
+<li>ICH Quality Guidelines — ich.org/page/quality-guidelines</li>
+<li>openFDA — open.fda.gov · ГРЛС — grls.minzdrav.gov.ru</li>
+</ul>
+</div></details>
+<details><summary>Данные и инструменты</summary><div class="in">
+<ul>
+<li>PubChem (PUG REST проверен живым запросом) — pubchem.ncbi.nlm.nih.gov</li>
+<li>ChEMBL — ebi.ac.uk/chembl · Europe PMC REST (проверен) — ebi.ac.uk/europepmc</li>
+<li>Therapeutics Data Commons — tdcommons.ai · AqSolDB (CC0) — github.com/mcsorkun/AqSolDB</li>
+<li>SwissADME — swissadme.ch · ADMETlab 3.0 — admetlab3.scbdd.com</li>
+<li>Open Systems Pharmacology (PK-Sim) — open-systems-pharmacology.org · vLLM — docs.vllm.ai</li>
+</ul>
+</div></details>
+<details><summary>Внутренние материалы проекта</summary><div class="in">
+<ul>
+<li>material/part1 — обзор литературы (54 источника) · material/part2 — анализ рынка (20 схем)</li>
+<li>material/part3 — архитектура (19 модулей, контракты) · material/part4 — окружение и логи проверок</li>
+<li>material/part5 — датасет и отчёт · material/part6 — хранилище документов · material/part7 — первая фича</li>
+</ul>
+</div></details>
+</section>
+
+<section id="next">
+<h2>План на следующую неделю</h2>
+<ul>
+<li><b>Реализация первой фичи</b> по архитектуре этапа 7: компоненты в src/, прогон одного кейса end-to-end, затем dev-сплита (96 кейсов) с формальной оценкой оценщиком датасета.</li>
+<li><b>Отложенные решения:</b> судьба Gemini (прокси / Vertex AI / отказ); экспертная приёмка разметки датасета v1.0.</li>
+<li><b>Риски:</b> правила диагностики на 20 контекстах — контролировать предметной логикой, не подгонкой; время dev-прогона на одной GPU.</li>
+</ul>
+</section>
+
+<footer>Отчёт собран из реальных материалов недели 1 (material/part1–part7). Проверьте числа и выводы перед отправкой: ответственность за содержание — на авторе.</footer>
+</div>
+</body>
+</html>

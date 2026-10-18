@@ -1,0 +1,696 @@
+[
+  {
+    "anchor_id": "A01",
+    "molecule": "itraconazole",
+    "product_context": "SPORANOX, capsules; выбранная запись DailyMed",
+    "source_id": "L01",
+    "source_url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4d555fa-787c-40fb-bb7d-b0d4f7318fd0",
+    "source_locator": "Clinical Pharmacology / Absorption; Warnings / Interchangeability",
+    "facts": [
+      {
+        "fact_id": "A01.F1",
+        "text": "Для капсул снижение кислотности желудка связано со снижением абсорбции; полный приём пищи влияет на экспозицию."
+      },
+      {
+        "fact_id": "A01.F2",
+        "text": "При одинаковой дозе экспозиция из раствора выше, чем из капсул; эти формы не следует считать взаимозаменяемыми."
+      }
+    ],
+    "topic": "ph_and_product_identity",
+    "misleading_claim": "Любой продукт итраконазола имеет одинаковое всасывание, поэтому состав и кислотность можно не учитывать.",
+    "focus": "Отделить влияние pH и лекарственной формы от общей молекулярной растворимости; не переносить свойства раствора на капсулу.",
+    "next_checks": [
+      "Получить профиль растворения выбранной капсулы при разных pH.",
+      "Установить дозу, количественный состав и контекст сравнения."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A02",
+    "molecule": "posaconazole",
+    "product_context": "NOXAFIL, oral suspension vs delayed-release tablets",
+    "source_id": "L02",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b073b082-7b57-4423-8c06-4fd4263d6f84",
+    "source_locator": "2.1; 2.9; product panel",
+    "facts": [
+      {
+        "fact_id": "A02.F1",
+        "text": "Обычная пероральная суспензия не заменяется автоматически таблетками с отсроченным высвобождением или PowderMix."
+      },
+      {
+        "fact_id": "A02.F2",
+        "text": "Для обычной суспензии указана концентрация 200 mg/5 mL; это концентрация, а не назначенная суточная доза."
+      }
+    ],
+    "topic": "non_substitutability",
+    "misleading_claim": "Суспензия 200 mg/5 mL означает, что пациент принимает 200 mg ежедневно, и её можно заменить таблеткой миллиграмм к миллиграмму.",
+    "focus": "Идентифицировать конкретную форму и не смешивать концентрацию с режимом дозирования.",
+    "next_checks": [
+      "Уточнить, какая именно суспензия выбрана.",
+      "Сравнивать формы с учётом различий в назначении и PK."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "product_concentration",
+        "value": 40,
+        "unit": "mg/mL",
+        "original": "200 mg/5 mL",
+        "basis": "posaconazole; original oral suspension",
+        "conditions": {},
+        "derivation": "200 / 5; точное преобразование концентрации"
+      }
+    ]
+  },
+  {
+    "anchor_id": "A03",
+    "molecule": "fenofibrate",
+    "product_context": "TRICOR 145 mg, историческая запись DailyMed",
+    "source_id": "L03",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=194cd14a-d952-4507-91be-3f1d5371d3b8",
+    "source_locator": "Clinical Pharmacology / Absorption",
+    "facts": [
+      {
+        "fact_id": "A03.F1",
+        "text": "В этой записи для однократной дозы 145 mg значимого различия AUC и Cmax fenofibric acid между натощак и не натощак не сообщается."
+      },
+      {
+        "fact_id": "A03.F2",
+        "text": "Измеряемый аналит — fenofibric acid; результат нельзя автоматически перенести на все формы фенофибрата."
+      }
+    ],
+    "topic": "negative_food_effect_control",
+    "misleading_claim": "У всех форм фенофибрата обязательно одинаковый выраженный пищевой эффект.",
+    "focus": "Сохранить отрицательный контроль и привязку к продукту, дозе и метаболиту.",
+    "next_checks": [
+      "Получить данные именно по текущей форме и дозе.",
+      "Не оптимизировать пищевой эффект, пока исходная проблема не подтверждена."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A04",
+    "molecule": "albendazole",
+    "product_context": "ALBENZA, film-coated tablets",
+    "source_id": "L04",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1977a867-0ee1-44c0-8da3-fe59c48699f5",
+    "source_locator": "12.3 Absorption",
+    "facts": [
+      {
+        "fact_id": "A04.F1",
+        "text": "В инструкции плохое всасывание связано с низкой водной растворимостью; исходное вещество быстро превращается в сульфоксид."
+      },
+      {
+        "fact_id": "A04.F2",
+        "text": "На фоне жирной пищи описано повышение плазменной концентрации сульфоксида, а не доказательство одинакового изменения всех PK-показателей исходного вещества."
+      }
+    ],
+    "topic": "analyte_and_food",
+    "misleading_claim": "Повышенная концентрация сульфоксида — это непосредственно измеренная абсолютная биодоступность альбендазола.",
+    "focus": "Разделить действующее вещество, метаболит, концентрацию и абсолютную биодоступность.",
+    "next_checks": [
+      "Указать аналит и показатель сравнения.",
+      "Проверить растворение и влияние пищи для конкретного образца."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A05",
+    "molecule": "atovaquone",
+    "product_context": "MEPRON oral suspension, DailyMed version 28",
+    "source_id": "L05",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f&version=28",
+    "source_locator": "12.3 / Effect of Food",
+    "facts": [
+      {
+        "fact_id": "A05.F1",
+        "text": "В сравнении у 16 здоровых участников после однократной дозы суспензии 750 mg пища повышала экспозицию."
+      },
+      {
+        "fact_id": "A05.F2",
+        "text": "Авторы инструкции сообщают отношение AUC 2.6 ± 1.0; это описанная вариабельность отношения, не 95%-ный доверительный интервал."
+      }
+    ],
+    "topic": "food_variability",
+    "misleading_claim": "2.6 ± 1.0 означает 95%-ный доверительный интервал и гарантированный выигрыш новой рецептуры.",
+    "focus": "Сохранить дозу, условия и статистический смысл ±; исторический эффект пищи не прогноз новой формы.",
+    "next_checks": [
+      "Сопоставить fed/fasted в одной форме.",
+      "Отдельно проверить новую рецептуру и воспроизводимость результата."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "fed_fasted_AUC_ratio",
+        "value": 2.6,
+        "unit": "1",
+        "original": "2.6 ± 1.0-fold increase",
+        "basis": "atovaquone; mean reported ratio; single dose 750 mg; n=16",
+        "conditions": {
+          "medium": "fed meal 23 g fat, 610 kcal versus overnight fast"
+        },
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A06",
+    "molecule": "ziprasidone",
+    "product_context": "GEODON capsules, Pfizer label",
+    "source_id": "L06",
+    "source_url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=584",
+    "source_locator": "7.10; 12.3 Absorption",
+    "facts": [
+      {
+        "fact_id": "A06.F1",
+        "text": "Для пероральной дозы 20 mg после еды абсолютная биодоступность описана примерно как 60%."
+      },
+      {
+        "fact_id": "A06.F2",
+        "text": "Пища может повышать абсорбцию до двух раз; пероральная и внутримышечная формы в маркировке относятся к разным сценариям."
+      }
+    ],
+    "topic": "route_and_food",
+    "misleading_claim": "Данные внутримышечного зипрасидона позволяют без проверки восстановить пищевой эффект капсул.",
+    "focus": "Сохранить путь введения и условия питания; не смешивать формы.",
+    "next_checks": [
+      "Выбрать пероральный продукт и дозу.",
+      "Проверять экспозицию в условиях предполагаемого применения."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "absolute_bioavailability",
+        "value": 60,
+        "unit": "%",
+        "original": "approximately 60%",
+        "basis": "ziprasidone; 20 mg oral fed",
+        "conditions": {
+          "medium": "fed"
+        },
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A07",
+    "molecule": "lurasidone",
+    "product_context": "LATUDA tablets",
+    "source_id": "L07",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=afad3051-9df2-4c54-9684-e8262a133af8",
+    "source_locator": "2.3 / Administration Information",
+    "facts": [
+      {
+        "fact_id": "A07.F1",
+        "text": "Для LATUDA пища повышает AUC приблизительно в два раза, а Cmax — приблизительно в три раза."
+      },
+      {
+        "fact_id": "A07.F2",
+        "text": "Эти два показателя не взаимозаменяемы; источник отдельно указывает условие приёма с пищей."
+      }
+    ],
+    "topic": "endpoint_disambiguation",
+    "misleading_claim": "Поскольку Cmax выросла втрое, AUC и абсолютная биодоступность также обязательно выросли втрое.",
+    "focus": "Не подменять AUC значением Cmax и не превращать эффект пищи в оптимизацию состава.",
+    "next_checks": [
+      "Раздельно фиксировать AUC и Cmax.",
+      "Для новой формы определить допустимый профиль экспозиции."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "fed_fasted_AUC_ratio",
+        "value": 2,
+        "unit": "1",
+        "original": "approximately 2-fold",
+        "basis": "lurasidone; food comparison",
+        "conditions": {
+          "medium": "fed versus fasted"
+        },
+        "derivation": null
+      },
+      {
+        "endpoint": "fed_fasted_Cmax_ratio",
+        "value": 3,
+        "unit": "1",
+        "original": "approximately 3-fold",
+        "basis": "lurasidone; food comparison",
+        "conditions": {
+          "medium": "fed versus fasted"
+        },
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A08",
+    "molecule": "rivaroxaban",
+    "product_context": "XARELTO tablets: manufacturer Medical Information",
+    "source_id": "L08",
+    "source_url": "https://www.jnjmedicalconnect.com/products/xarelto/medical-content/xarelto-pharmacokinetics-and-pharmacodynamics",
+    "source_locator": "Summary / Product Labeling",
+    "facts": [
+      {
+        "fact_id": "A08.F1",
+        "text": "Пищевой эффект зависит от дозы: для 2.5 и 10 mg биодоступность оценивается в 80–100% и не зависит от пищи."
+      },
+      {
+        "fact_id": "A08.F2",
+        "text": "Для таблетки 20 mg натощак абсолютная биодоступность около 66%; её нельзя переносить на дозу 10 mg."
+      }
+    ],
+    "topic": "dose_dependent_food",
+    "misleading_claim": "Одно значение биодоступности ривароксабана можно хранить без дозы и применять ко всем таблеткам.",
+    "focus": "Сделать дозу и условия обязательным контекстом наблюдения.",
+    "next_checks": [
+      "Разделить наблюдения по дозам.",
+      "Не усреднять fed/fasted и разные дозы."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "absolute_bioavailability",
+        "value": 66,
+        "unit": "%",
+        "original": "approximately 66%",
+        "basis": "rivaroxaban; 20 mg oral fasted",
+        "conditions": {
+          "medium": "fasted"
+        },
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A09",
+    "molecule": "dabigatran etexilate",
+    "product_context": "PRADAXA capsules",
+    "source_id": "L09",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba74e3cd-b06f-4145-b284-5fd6b84ff3c9",
+    "source_locator": "11 Description; 12.3 Pharmacokinetics",
+    "facts": [
+      {
+        "fact_id": "A09.F1",
+        "text": "Приём содержимого без капсульной оболочки увеличивает относительную биодоступность на 75% в однодозовом исследовании; инструкция запрещает такое изменение при применении."
+      },
+      {
+        "fact_id": "A09.F2",
+        "text": "Для мезилатной соли указана растворимость насыщенного водного раствора 1.8 mg/mL; pH и температура в данном фрагменте не уточнены."
+      }
+    ],
+    "topic": "release_and_salt",
+    "misleading_claim": "Открыть капсулу — безопасная оптимизация; 1.8 mg/mL относится к свободному основанию при любом pH.",
+    "focus": "Отделить физическое изменение продукта от безопасной стратегии; сохранить форму соли и неизвестные условия.",
+    "next_checks": [
+      "Не рекомендовать повреждение существующей капсулы.",
+      "Для новой формы требуется независимая разработка и PK-проверка."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "aqueous_solubility_reported",
+        "value": 1.8,
+        "unit": "mg/mL",
+        "original": "1.8 mg/mL",
+        "basis": "dabigatran etexilate mesylate; saturated pure water; pH and temperature not reported in excerpt",
+        "conditions": {
+          "medium": "pure water"
+        },
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A10",
+    "molecule": "levothyroxine sodium",
+    "product_context": "SYNTHROID tablets, историческая запись",
+    "source_id": "L10",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cede55d-8b05-433b-bf10-67d5fe4a4399",
+    "source_locator": "Clinical Pharmacology / Absorption; Pediatric dosage",
+    "facts": [
+      {
+        "fact_id": "A10.F1",
+        "text": "В записи пища и пищевые волокна влияют на абсорбцию; результат относится к левотироксину."
+      },
+      {
+        "fact_id": "A10.F2",
+        "text": "Для свежеприготовленной из таблетки суспензии отдельно указано отсутствие хранения; это не исследование срока годности новой жидкой формы."
+      }
+    ],
+    "topic": "storage_and_product_change",
+    "misleading_claim": "Раз таблетку можно диспергировать, можно объявить для новой суспензии срок хранения два года.",
+    "focus": "Отделить использование свежей дисперсии от разработки стабильной жидкой формы.",
+    "next_checks": [
+      "Получить данные стабильности конкретного состава и упаковки.",
+      "Сохранить ограничения источника и исторический статус записи."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A11",
+    "molecule": "ciprofloxacin",
+    "product_context": "Ciprofloxacin coated tablets, selected DailyMed record",
+    "source_id": "L11",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b5fe0aa-c74f-42f3-a84a-1cb16009aa80",
+    "source_locator": "2.4 / With Multivalent Cations and With Dairy Products",
+    "facts": [
+      {
+        "fact_id": "A11.F1",
+        "text": "В инструкции учитывается взаимодействие с многовалентными катионами и возможное снижение абсорбции."
+      },
+      {
+        "fact_id": "A11.F2",
+        "text": "Отдельный молочный продукт и приём с полноценной пищей, содержащей такие продукты, описаны не одинаково."
+      }
+    ],
+    "topic": "contextual_interactions",
+    "misleading_claim": "Любое наличие кальция в любом контексте полностью запрещает любую форму ципрофлоксацина.",
+    "focus": "Не переносить предупреждение о совместном приёме на универсальную бинарную метку всех рецептур.",
+    "next_checks": [
+      "Уточнить химический и временной контекст контакта.",
+      "Проверить выбранный состав, а не выводить совместимость только из класса вещества."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A12",
+    "molecule": "alendronate sodium",
+    "product_context": "FOSAMAX tablets, Organon",
+    "source_id": "L12",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56",
+    "source_locator": "12.3 Absorption",
+    "facts": [
+      {
+        "fact_id": "A12.F1",
+        "text": "Средняя абсолютная биодоступность у женщин для доз 5–70 mg после ночного голодания и за два часа до завтрака указана как 0.64%."
+      },
+      {
+        "fact_id": "A12.F2",
+        "text": "С пищей биодоступность существенно ниже; низкая системная величина сама по себе не определяет один механизм потерь."
+      }
+    ],
+    "topic": "percent_fraction_low_exposure",
+    "misleading_claim": "0.64% равно доле 0.64, а низкая величина доказывает, что достаточно добавить растворитель.",
+    "focus": "Правильно нормализовать проценты и не устанавливать ограничивающий фактор по одному F.",
+    "next_checks": [
+      "Сохранить популяцию и условия исследования.",
+      "Собрать данные растворения и проницаемости для механистического вывода."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "absolute_bioavailability",
+        "value": 0.64,
+        "unit": "%",
+        "original": "0.64%",
+        "basis": "alendronate; women; 5–70 mg; overnight fast; 2 h before breakfast",
+        "conditions": {
+          "medium": "fasted; 2 h before breakfast"
+        },
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A13",
+    "molecule": "tacrolimus",
+    "product_context": "ENVARSUS XR extended-release tablets",
+    "source_id": "L13",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de2315b0-6344-43ac-9aea-3e3b68d828e7",
+    "source_locator": "2.1; 5.3",
+    "facts": [
+      {
+        "fact_id": "A13.F1",
+        "text": "ENVARSUS XR не является автоматически взаимозаменяемым с другими формами такролимуса."
+      },
+      {
+        "fact_id": "A13.F2",
+        "text": "Существующую таблетку следует сохранять целой; изменение высвобождения нельзя принимать за эквивалентную замену."
+      }
+    ],
+    "topic": "modified_release",
+    "misleading_claim": "Одинаковое МНН гарантирует одинаковую экспозицию любых форм такролимуса.",
+    "focus": "Разделить продукт, профиль высвобождения и цель сравнения.",
+    "next_checks": [
+      "Уточнить референтную форму.",
+      "Проверять сопоставимость профиля, а не максимальный прирост AUC."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A14",
+    "molecule": "duloxetine hydrochloride",
+    "product_context": "CYMBALTA delayed-release capsules",
+    "source_id": "L14",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f7d4d67-10c1-4bf4-a7f2-c185fbad64ba",
+    "source_locator": "2.1; 7.7",
+    "facts": [
+      {
+        "fact_id": "A14.F1",
+        "text": "Кишечнорастворимая оболочка препятствует растворению до участка с pH выше 5.5; без защиты в сильнокислой среде возможен гидролиз."
+      },
+      {
+        "fact_id": "A14.F2",
+        "text": "Данные о совместном применении с антацидами или фамотидином не устанавливают известный эффект всех ингибиторов протонной помпы."
+      }
+    ],
+    "topic": "chemical_stability",
+    "misleading_claim": "Убрать защитную оболочку — всегда способ улучшить всасывание; неизвестный эффект PPI можно назвать отсутствующим.",
+    "focus": "Не смешивать растворение и защиту от деградации; сохранить статус неизвестного взаимодействия.",
+    "next_checks": [
+      "Измерить химическую устойчивость и высвобождение при разных pH.",
+      "Не назначать срок хранения или PK-эффект без исследования."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A15",
+    "molecule": "valacyclovir / acyclovir",
+    "product_context": "Soul-Lawton et al.: valaciclovir versus IV acyclovir",
+    "source_id": "L15",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/8593015/",
+    "source_locator": "Abstract, randomized crossover study",
+    "facts": [
+      {
+        "fact_id": "A15.F1",
+        "text": "В перекрёстном исследовании 12 здоровых добровольцев средняя абсолютная биодоступность ацикловира после валацикловира составила 54.2%."
+      },
+      {
+        "fact_id": "A15.F2",
+        "text": "Измеряемый системный аналит — ацикловир; известный результат конкретного пролекарства не является прогнозом любого нового производного."
+      }
+    ],
+    "topic": "prodrug_and_evidence_transfer",
+    "misleading_claim": "Любое присоединение аминокислоты к ацикловиру гарантирует биодоступность 54.2%.",
+    "focus": "Разделить введённое соединение, активный аналит и переносимость доказательства.",
+    "next_checks": [
+      "Не переносить свойства родителя на новое производное.",
+      "Для нового пролекарства нужны данные превращения, экспозиции и самостоятельная оценка."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "absolute_bioavailability",
+        "value": 54.2,
+        "unit": "%",
+        "original": "54.2%",
+        "basis": "acyclovir after valaciclovir 1000 mg oral versus acyclovir 350 mg IV; n=12",
+        "conditions": {
+          "medium": "fasted"
+        },
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A16",
+    "molecule": "cobimetinib",
+    "product_context": "Takahashi et al.: absorption and first-pass metabolism",
+    "source_id": "L16",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/26451002/",
+    "source_locator": "Abstract",
+    "facts": [
+      {
+        "fact_id": "A16.F1",
+        "text": "Авторы оценили всосавшуюся долю Fa как 0.88, а системную биодоступность F как 0.28."
+      },
+      {
+        "fact_id": "A16.F2",
+        "text": "Авторы обосновали вклад кишечного пресистемного метаболизма сочетанием данных; обе величины относятся к разным конечным точкам."
+      }
+    ],
+    "topic": "first_pass_vs_absorption",
+    "misleading_claim": "F=0.28 означает, что всосалось только 28%, поэтому нужно лишь улучшить растворение.",
+    "focus": "Отделить Fa от F и включить гипотезу пресистемных потерь.",
+    "next_checks": [
+      "Проверить модельные предположения о кишечной и печёночной элиминации.",
+      "Не обещать прирост F от солюбилизации без механистической проверки."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": [
+      {
+        "endpoint": "fraction_absorbed",
+        "value": 0.88,
+        "unit": "1",
+        "original": "Fa = 0.88",
+        "basis": "cobimetinib; author estimate",
+        "conditions": {},
+        "derivation": null
+      },
+      {
+        "endpoint": "absolute_bioavailability",
+        "value": 0.28,
+        "unit": "1",
+        "original": "F = 0.28",
+        "basis": "cobimetinib; reported study estimate",
+        "conditions": {},
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A17",
+    "molecule": "ritonavir",
+    "product_context": "Bauer et al.: conformational polymorphism",
+    "source_id": "L17",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/11474792/",
+    "source_locator": "Abstract, Results and Conclusions",
+    "facts": [
+      {
+        "fact_id": "A17.F1",
+        "text": "Для ритонавира описаны две разные кристаллические решётки с существенно различающимися свойствами растворимости."
+      },
+      {
+        "fact_id": "A17.F2",
+        "text": "Более стабильная упаковка формы II показывает, что одинаковая молекулярная структура не определяет одинаковые свойства твёрдой фазы."
+      }
+    ],
+    "topic": "solid_state",
+    "misleading_claim": "Одинаковый SMILES гарантирует одинаковую растворимость и стабильность всех полиморфов.",
+    "focus": "Хранить молекулу и твёрдую форму раздельно; не усреднять их свойства.",
+    "next_checks": [
+      "Установить полиморф образца подходящим твёрдофазным методом.",
+      "Проверить превращения при изготовлении и хранении."
+    ],
+    "route": "oral",
+    "scope": "core",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A18",
+    "molecule": "semaglutide",
+    "product_context": "Buckley et al.: semaglutide coformulated with SNAC",
+    "source_id": "L18",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/30429357/",
+    "source_locator": "Abstract",
+    "facts": [
+      {
+        "fact_id": "A18.F1",
+        "text": "В исследованной совместной таблетированной системе семаглутид всасывался локально в желудке; требовалось совместное формулирование с SNAC."
+      },
+      {
+        "fact_id": "A18.F2",
+        "text": "Механизм описан как специфичный для соединения; отсутствие эффекта на tight junctions не даёт универсальную модель усилителей проницаемости."
+      }
+    ],
+    "topic": "peptide_out_of_scope",
+    "misleading_claim": "Результат семаглутида позволяет применять тот же усилитель к любому пептиду и считать его малой молекулой.",
+    "focus": "Отметить выход за MVP малых молекул и не переносить механизм на весь класс.",
+    "next_checks": [
+      "Подключить отдельный пептидный профиль в расширенном проекте.",
+      "Запросить прямые данные для новой молекулы и совместного состава."
+    ],
+    "route": "oral",
+    "scope": "extension_guard",
+    "numbers": []
+  },
+  {
+    "anchor_id": "A19",
+    "molecule": "remdesivir",
+    "product_context": "Cyclodextrin-enabled remdesivir: electrospun/lyophilized research forms",
+    "source_id": "L19",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/33910715/",
+    "source_locator": "Abstract",
+    "facts": [
+      {
+        "fact_id": "A19.F1",
+        "text": "В исследовании SBECD-систем ремдесивира сообщено примерно 300-кратное улучшение водной растворимости."
+      },
+      {
+        "fact_id": "A19.F2",
+        "text": "Результат относится к разработке инфузионных систем и не является измеренным увеличением кишечного всасывания или клинической эффективности в 300 раз."
+      }
+    ],
+    "topic": "intravenous_endpoint",
+    "misleading_claim": "300-кратная растворимость инфузионного ремдесивира означает 300-кратную пероральную биодоступность.",
+    "focus": "Маршрутизировать как вне перорального MVP и не подменять растворимость системной экспозицией.",
+    "next_checks": [
+      "Проверять состав, устойчивость и пригодность инфузионной формы в отдельном модуле.",
+      "Не переносить значение на другой путь введения."
+    ],
+    "route": "intravenous",
+    "scope": "extension_guard",
+    "numbers": [
+      {
+        "endpoint": "aqueous_solubility_fold_change",
+        "value": 300,
+        "unit": "1",
+        "original": "300-fold improvement",
+        "basis": "remdesivir/SBECD investigated formulations; abstract-level value",
+        "conditions": {},
+        "derivation": null
+      }
+    ]
+  },
+  {
+    "anchor_id": "A20",
+    "molecule": "paclitaxel",
+    "product_context": "ABRAXANE albumin-bound injectable suspension",
+    "source_id": "L20",
+    "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24d10449-2936-4cd3-b7db-a7683db721e4",
+    "source_locator": "2.1; 3",
+    "facts": [
+      {
+        "fact_id": "A20.F1",
+        "text": "ABRAXANE представляет белок-связанные частицы паклитаксела для внутривенного введения."
+      },
+      {
+        "fact_id": "A20.F2",
+        "text": "Инструкция прямо отделяет его от других продуктов паклитаксела и запрещает автоматическую подстановку."
+      }
+    ],
+    "topic": "injectable_product_identity",
+    "misleading_claim": "Любая форма паклитаксела взаимозаменяема; улучшение нужно оценивать через кишечную проницаемость.",
+    "focus": "Не включать инфузионный продукт в пероральный расчёт и не смешивать наноноситель со свободной молекулой.",
+    "next_checks": [
+      "Отдельная идентификация носителя и продукта.",
+      "Специализированная программа парентерального сравнения вне текущего MVP."
+    ],
+    "route": "intravenous",
+    "scope": "extension_guard",
+    "numbers": []
+  }
+]

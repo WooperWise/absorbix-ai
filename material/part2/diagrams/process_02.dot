@@ -1,0 +1,22 @@
+digraph solution_02 {
+	bgcolor=white fontcolor="#142D45" fontname="DejaVu Sans" fontsize=18 label="02. Quotient Sciences: Translational Pharmaceutics / RapidFACT
+Контрактная услуга; публичное описание поставщика" labeljust=l labelloc=t nodesep=0.25 pad=0.25 rankdir=LR ranksep=0.40 splines=polyline
+	node [color="#8799AC" fillcolor="#F2F6FA" fontname="DejaVu Sans" fontsize=14 height=0.72 margin="0.13,0.13" shape=box style="rounded,filled" width=2.4]
+	edge [arrowsize=.75 color="#4B657E" fontname="DejaVu Sans" fontsize=10 penwidth=1.4]
+	0 [label="Целевой профиль
+и программа"]
+	1 [label="Разработка формы
+и GMP-производство"]
+	2 [label="Клиническое
+PK-исследование"]
+	3 [label="Оценка новых данных
+и выбор формы"]
+	0 -> 1
+	1 -> 2
+	2 -> 3
+	3 -> 1 [label="Следующая итерация в пределах
+согласованной программы" constraint=false style=dashed]
+	label="02. Quotient Sciences: Translational Pharmaceutics / RapidFACT
+Контрактная услуга; публичное описание поставщика
+Источники: S23, S24"
+}

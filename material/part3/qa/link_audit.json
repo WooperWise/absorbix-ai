@@ -1,0 +1,136 @@
+{
+  "purpose": "Дополнительная транспортная проверка основных URL реестра. Содержательная проверка первоисточников описана отдельно в sources.md. HTTP 200 не равен успешной научной проверке; блокировка GET не доказывает несуществование страницы.",
+  "checks": [
+    {
+      "id": "S01",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q8r2-pharmaceutical-development",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.423382+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/q8r2-pharmaceutical-development (Caused by NameResolutionError(\"HTTPSConnection(host='www.fda.gov', port",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S02",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q9r1-quality-risk-management",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.424319+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/q9r1-quality-risk-management (Caused by NameResolutionError(\"HTTPSConnection(host='www.fda.gov', port=44",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S03",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m9-biopharmaceutics-classification-system-based-biowaivers",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.425470+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/m9-biopharmaceutics-classification-system-based-biowaivers (Caused by NameResolutionError(\"HTTPSConnecti",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S04",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m13a-bioequivalence-immediate-release-solid-oral-dosage-forms",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.427990+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/m13a-bioequivalence-immediate-release-solid-oral-dosage-forms (Caused by NameResolutionError(\"HTTPSConne",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S05",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.429693+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development (Caused by NameResolutionError(\"HTTPSConnection(h",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S06",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.430271+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological (Cause",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S07",
+      "requested_url": "https://www.ema.europa.eu/en/scientific-guidelines/use-artificial-intelligence-ai-medicinal-product-lifecycle",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.431104+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.ema.europa.eu', port=443): Max retries exceeded with url: /en/scientific-guidelines/use-artificial-intelligence-ai-medicinal-product-lifecycle (Caused by NameResolutionError(\"HTTPSConnection(host='www.ema.europ",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S08",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q1ar2-stability-testing-new-drug-substances-and-products",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:52.431908+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/q1ar2-stability-testing-new-drug-substances-and-products (Caused by NameResolutionError(\"HTTPSConnection",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S09",
+      "requested_url": "https://www.ema.europa.eu/en/scientific-guidelines/ich-q1-guideline-stability-testing-drug-substances-drug-products",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:57.435238+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.ema.europa.eu', port=443): Max retries exceeded with url: /en/scientific-guidelines/ich-q1-guideline-stability-testing-drug-substances-drug-products (Caused by NameResolutionError(\"HTTPSConnection(host='www.ema",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S10",
+      "requested_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:57.436390+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.fda.gov', port=443): Max retries exceeded with url: /regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application (Caused by NameResolutionError(\"H",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S11",
+      "requested_url": "https://www.iso.org/standard/74393.html",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:57.437353+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.iso.org', port=443): Max retries exceeded with url: /standard/74393.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.iso.org', port=443): Failed to resolve 'www.iso.org' ([Errno -3] Temporary fail",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S12",
+      "requested_url": "https://www.iso.org/standard/78176.html",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:57.438268+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.iso.org', port=443): Max retries exceeded with url: /standard/78176.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.iso.org', port=443): Failed to resolve 'www.iso.org' ([Errno -3] Temporary fail",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S13",
+      "requested_url": "https://c4model.com/diagrams/container",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:57.438876+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='c4model.com', port=443): Max retries exceeded with url: /diagrams/container (Caused by NameResolutionError(\"HTTPSConnection(host='c4model.com', port=443): Failed to resolve 'c4model.com' ([Errno -3] Temporary failu",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S14",
+      "requested_url": "https://www.w3.org/TR/prov-dm/",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:42:57.439569+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.w3.org', port=443): Max retries exceeded with url: /TR/prov-dm/ (Caused by NameResolutionError(\"HTTPSConnection(host='www.w3.org', port=443): Failed to resolve 'www.w3.org' ([Errno -3] Temporary failure in name",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S15",
+      "requested_url": "https://ucum.org/ucum",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:43:02.441393+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='ucum.org', port=443): Max retries exceeded with url: /ucum (Caused by NameResolutionError(\"HTTPSConnection(host='ucum.org', port=443): Failed to resolve 'ucum.org' ([Errno -3] Temporary failure in name resolution)\"",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    },
+    {
+      "id": "S16",
+      "requested_url": "https://json-schema.org/draft/2020-12",
+      "method": "GET (streamed; not a full-content verification)",
+      "checked_at_utc": "2026-10-18T13:43:02.442360+00:00",
+      "error": "ConnectionError: HTTPSConnectionPool(host='json-schema.org', port=443): Max retries exceeded with url: /draft/2020-12 (Caused by NameResolutionError(\"HTTPSConnection(host='json-schema.org', port=443): Failed to resolve 'json-schema.org' ([Errno -3] Temporar",
+      "interpretation": "network_check_failed; does not establish absence of source"
+    }
+  ],
+  "scope": "16 адресов из 47; проверка остановлена после одинакового DNS-отказа среды.",
+  "overall_result": "unavailable_in_execution_environment",
+  "conclusion": "Пакетная GET-проверка не является проверкой доступности источников: запросы не достигли серверов. Статусы просмотра документации отдельным веб-инструментом отражены в sources.md."
+}

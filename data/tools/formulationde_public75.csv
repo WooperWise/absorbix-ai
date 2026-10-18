@@ -1,0 +1,76 @@
+record_id,source_row,api_name_raw,second_component_name_raw,label_original,label_meaning,source_url
+DE-S1-001,1,Topiramate,HPMC 15cps,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-002,2,Topiramate,PEG4000,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-003,3,Topiramate,Aspartame,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-004,4,Modafinil,Magnesium stearate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-005,5,5-fluorouracil,Clove oil,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-006,6,5-fluorouracil,HPMC,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-007,7,5-fluorouracil,Triethanolamine,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-008,8,5-fluorouracil,Tween 20,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-009,9,5-fluorouracil,Propylene glycol,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-010,10,5-fluorouracil,Sodium benzoate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-011,11,5-fluorouracil,Ethanol,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-012,12,Ibrutinib,Trehalose,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-013,13,Ibrutinib,DSPE-MPEG 2000,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-014,14,Naproxen,Microcrystalline cellulose,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-015,15,Naproxen,Hydroxypropylcellulose,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-016,16,Treprostinil,Ethyl acetate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-017,17,Treprostinil,Propylene glycol,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-018,18,Curcumin,Chitosan,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-019,19,Curcumin,Ethylcellulose,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-020,20,Curcumin,HPMC,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-021,21,Miconazole nitrate,HPMC,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-022,22,Miconazole nitrate,Poloxamer,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-023,23,Miconazole nitrate,Chitosan,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-024,24,Mitiglinide,HPMC,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-025,25,Mitiglinide,Sodium alginate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-026,26,Atomoxetine,Compritol 888 ATO,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-027,27,Atomoxetine,Stearic acid,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-028,28,Atomoxetine,HPMC,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-029,29,Nedaplatin,"1,2-distearoyl-sn-glycero-3-phosphocholine",0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-030,30,Paracetamol,Magnesium Stearate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-031,31,Paracetamol,Talc,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-032,32,Paracetamol,Lactose,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-033,33,Ibuprofen,Neusilin® US2,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-034,34,Glimepiride,Transcutol P,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-035,35,Dihydromyricetin,HPMC,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-036,36,Dihydromyricetin,Calcium phosphate dibasic anhydrous,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-037,37,Mirtazapine,Oleic acid,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-038,38,Mirtazapine,PEG 6000,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-039,39,Omeprazole,Span 80,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-040,40,Esomeprazole,Calcium alginate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-041,41,Esomeprazole,HPMC,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-042,42,Esomeprazole,Acrylic acid,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-043,43,Esomeprazole,Chondroitin sulfate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-044,44,Erdafitinib,Microcrystalline cellulose,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-045,45,Erdafitinib,Lactose,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-046,46,Erdafitinib,Calcium carbonate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-047,47,Erdafitinib,Starch,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-048,48,Erdafitinib,Magnesium Stearate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-049,49,Erdafitinib,Silicon dioxide,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-050,50,Erdafitinib,Ferric oxide red,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-051,51,Erdafitinib,Citric acid monohydrate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-052,52,Erdafitinib,Carboxymethyl cellulose,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-053,53,Erdafitinib,PEG,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-054,54,Erdafitinib,PVP,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-055,55,Erdafitinib,Crospovidone,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-056,56,Naproxen,Methylcellulose,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-057,57,Naproxen,HPMC,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-058,58,Naproxen,Sodium carboxymethylcellulose,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-059,59,Nedaplatin,Soybean phosphatidylcholine,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-060,60,Paracetamol,Vanillin,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-061,61,Paracetamol,Methylparaben,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-062,62,Brinzolamide,PEG,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-063,63,Benznidazole,Monolaurate,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-064,64,Arbidol hydrochloride,Chitosan,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-065,65,Arbidol hydrochloride,Magnesium stearate,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-066,66,Arbidol hydrochloride,Polyvinylpyrrolidone K-30,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-067,67,Sulconazole,Glyceryl monostearate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-068,68,Sulconazole,Tween 20,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-069,69,Paclitaxel,Dopamine hydrochloride,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-070,70,Tenofovir disoproxil fumarate,Croscarmellose sodium,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-071,71,Tenofovir disoproxil fumarate,Lactose monohydrate,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-072,72,Tenofovir disoproxil fumarate,Lamivudine,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-073,73,Tenofovir disoproxil fumarate,Microcrystalline cellulose,1,incompatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-074,74,Metoprolol tartrate,Acrylic Acid,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4
+DE-S1-075,75,Metoprolol tartrate,Methacrylic Acid,0,compatible,https://link.springer.com/article/10.1186/s41120-026-00156-4

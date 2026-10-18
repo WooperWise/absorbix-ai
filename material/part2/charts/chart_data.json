@@ -1,0 +1,50 @@
+{
+  "formulationde_external": {
+    "source": "https://doi.org/10.1186/s41120-026-00156-4",
+    "source_location": "Table 3; PDF page 5",
+    "n": 75,
+    "metrics": [
+      "Accuracy",
+      "Precision",
+      "Recall",
+      "F1"
+    ],
+    "FormulationDE": [
+      0.64,
+      0.33,
+      0.69,
+      0.45
+    ],
+    "DECW": [
+      0.63,
+      0.27,
+      0.44,
+      0.33
+    ]
+  },
+  "alpelisib_clinical": {
+    "source": "https://doi.org/10.1208/s12249-025-03109-4",
+    "source_location": "Abstract; clinical results",
+    "endpoints": [
+      "AUC∞",
+      "AUC до последней точки",
+      "Cmax"
+    ],
+    "ratio": [
+      0.984,
+      0.98,
+      0.947
+    ],
+    "ci90_low": [
+      0.952,
+      0.946,
+      0.891
+    ],
+    "ci90_high": [
+      1.02,
+      1.02,
+      1.01
+    ],
+    "note": "Клинические результаты, а не модельные предсказания."
+  }
+}

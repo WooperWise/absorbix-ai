@@ -1,0 +1,42 @@
+# Секреты — никогда в git
+.env
+
+# Личные материалы (корень, не пушатся)
+AGENTS.md
+DESCR.md
+opencode.json
+
+# Python байткод
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Сборка и упаковка
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Тесты и покрытие
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+
+# Кэши линтеров и тайпчекеров
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Виртуальные окружения
+.venv/
+venv/
+
+# Редакторы и ОС
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

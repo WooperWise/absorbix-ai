@@ -1,0 +1,146 @@
+openapi: 3.1.2
+info:
+  title: Diploma formulation platform — design contract fragment
+  version: 0.1.0
+  description: 'Проектный фрагмент: запуск и чтение анализа. Не развёрнутая служба
+    и не полный API.'
+paths:
+  /v1/case-revisions/{revision_id}/runs:
+    post:
+      operationId: startAnalysisRun
+      description: Workspace устанавливается по проверенной сессии. Повтор ключа с
+        другим телом отклоняется.
+      parameters:
+      - name: revision_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: true
+        schema:
+          type: string
+          minLength: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RunRequest'
+      responses:
+        '202':
+          description: Задание принято; результат ещё не получен.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RunStatus'
+        '403':
+          $ref: '#/components/responses/Problem'
+        '409':
+          $ref: '#/components/responses/Problem'
+        '422':
+          $ref: '#/components/responses/Problem'
+  /v1/runs/{run_id}:
+    get:
+      operationId: getAnalysisRun
+      parameters:
+      - name: run_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Техническое состояние и ссылки на доступные результаты.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RunStatus'
+        '403':
+          $ref: '#/components/responses/Problem'
+        '404':
+          $ref: '#/components/responses/Problem'
+components:
+  schemas:
+    RunRequest:
+      type: object
+      properties:
+        workflow_profile:
+          type: string
+          minLength: 1
+        budget_profile:
+          type: string
+          minLength: 1
+      required:
+      - workflow_profile
+      - budget_profile
+      additionalProperties: false
+    RunStatus:
+      type: object
+      properties:
+        run_id:
+          type: string
+          minLength: 1
+        case_revision_id:
+          type: string
+          minLength: 1
+        status:
+          type: string
+          enum:
+          - created
+          - queued
+          - running
+          - waiting_input
+          - retry_scheduled
+          - needs_reconciliation
+          - succeeded
+          - partial
+          - failed
+          - cancelled
+        result_refs:
+          type: array
+          items:
+            type: string
+            minLength: 1
+          minItems: 0
+      required:
+      - run_id
+      - case_revision_id
+      - status
+      - result_refs
+      additionalProperties: false
+    Problem:
+      type: object
+      properties:
+        type:
+          type: string
+          format: uri-reference
+        title:
+          type: string
+          minLength: 1
+        status:
+          type: integer
+          minimum: 100
+          maximum: 599
+        detail:
+          type: string
+          minLength: 1
+        instance:
+          type: string
+          format: uri-reference
+      required:
+      - type
+      - title
+      - status
+      additionalProperties: false
+  responses:
+    Problem:
+      description: Ошибка в формате RFC 9457; частные данные и секреты не включаются.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+x-deployment-security-note: Механизм аутентификации выбирается при интеграции с платформой
+  компании; отсутствие securitySchemes в данном фрагменте не означает публичный неаутентифицированный
+  API.

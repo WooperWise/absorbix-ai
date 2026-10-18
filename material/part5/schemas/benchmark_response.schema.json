@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision_status": {
+      "enum": [
+        "partial",
+        "ready_for_review",
+        "needs_clarification",
+        "out_of_scope",
+        "technical_failure"
+      ]
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "origin_kind": {
+            "enum": [
+              "source_fact",
+              "hypothesis",
+              "design_proposal",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "text",
+          "fact_refs",
+          "origin_kind"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "code",
+          "message"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "missing_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "performed",
+              "proposed",
+              "blocked",
+              "not_applicable"
+            ]
+          }
+        },
+        "required": [
+          "code",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "eligible",
+              "conditional",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_fact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "next_check": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "title",
+          "status",
+          "rationale",
+          "source_fact_refs",
+          "next_check"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "numeric_predictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "endpoint": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target": {
+            "enum": [
+              "historical_observation",
+              "new_formulation"
+            ]
+          },
+          "fact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "endpoint",
+          "value",
+          "unit",
+          "target",
+          "fact_refs"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "case_id",
+    "decision_status",
+    "claims",
+    "warnings",
+    "missing_inputs",
+    "actions",
+    "candidates",
+    "numeric_predictions"
+  ],
+  "additionalProperties": false
+}

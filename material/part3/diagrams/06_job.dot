@@ -1,0 +1,24 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.30", ranksep="0.55", splines=polyline, fontname="DejaVu Sans", fontsize=18, labelloc="t", label="Асинхронное выполнение и безопасное повторение", dpi=140];
+node [shape=box, style="rounded,filled", fillcolor="#f5f5f5", color="#555555", fontname="DejaVu Sans", fontsize=12, margin="0.16,0.12"];
+edge [fontname="DejaVu Sans", fontsize=10, color="#555555", arrowsize=0.7];
+req [label="Запрос запуска\nCaseRevision + idempotency key"];
+auth [label="Проверка прав и предусловий\nфиксация плана и бюджета"];
+tx [label="Транзакция: Run + Job\nответ HTTP 202 + run_id"];
+lease [label="Worker получает lease\nкороткая блокировка + fencing token"];
+tool [label="Внешний / локальный расчёт\nвне транзакции БД"];
+save [label="Запись артефакта\nпроверка схемы и контрольной суммы"];
+commit [label="Commit результата\nтолько при актуальном lease и версии"];
+recover [label="Сбой / истечение lease\nпроверка исхода перед повтором"];
+view [label="UI получает статус\nи отдельные научные ограничения"];
+req -> auth;
+auth -> tx;
+tx -> lease;
+lease -> tool;
+tool -> save;
+save -> commit;
+commit -> view;
+tool -> recover [label="неопределённый исход"];
+recover -> lease [label="только безопасный повтор"];
+recover -> view [label="нужна сверка исхода"];
+}

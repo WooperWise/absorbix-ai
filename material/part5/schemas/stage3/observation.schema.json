@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pharma-diploma:observation:1.0.0",
+  "title": "observation",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "observation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workspace_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subject_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "endpoint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin_kind": {
+      "type": "string",
+      "enum": [
+        "reported_measurement",
+        "partner_measurement",
+        "deterministic_calculation",
+        "ml_prediction",
+        "mechanistic_simulation",
+        "expert_judgment",
+        "synthetic_fixture"
+      ]
+    },
+    "value": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "numeric"
+            },
+            "number": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "number",
+            "unit"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "interval"
+            },
+            "lower": {
+              "type": "number"
+            },
+            "upper": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "lower",
+            "upper",
+            "unit"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "censored"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<",
+                "<=",
+                ">",
+                ">="
+              ]
+            },
+            "bound": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "operator",
+            "bound",
+            "unit"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "categorical"
+            },
+            "category": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "category"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "not_reported"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "quantity_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conditions": {
+      "type": "object",
+      "properties": {
+        "pH": {
+          "type": "number"
+        },
+        "temperature": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "const": "Cel"
+            }
+          },
+          "required": [
+            "value",
+            "unit"
+          ],
+          "additionalProperties": false
+        },
+        "medium": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duration_description": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "method_description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_snapshot_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_locator": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "const": "line_range"
+        },
+        "start_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_line": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "kind",
+        "start_line",
+        "end_line"
+      ],
+      "additionalProperties": false
+    },
+    "original_value_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "checked",
+        "rejected"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "schema_version",
+    "observation_id",
+    "workspace_id",
+    "subject_ref",
+    "endpoint",
+    "origin_kind",
+    "value",
+    "quantity_basis",
+    "conditions",
+    "method_description",
+    "source_snapshot_ref",
+    "evidence_locator",
+    "original_value_text",
+    "review_status",
+    "limitations",
+    "created_at"
+  ],
+  "additionalProperties": false
+}

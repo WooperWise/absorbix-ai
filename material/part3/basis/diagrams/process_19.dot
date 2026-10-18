@@ -1,0 +1,22 @@
+digraph solution_19 {
+	bgcolor=white fontcolor="#142D45" fontname="DejaVu Sans" fontsize=18 label="19. LLM с химическими инструментами: ChemCrow
+Исследовательская архитектура; не формуляционная валидация" labeljust=l labelloc=t nodesep=0.25 pad=0.25 rankdir=LR ranksep=0.40 splines=polyline
+	node [color="#8799AC" fillcolor="#F2F6FA" fontname="DejaVu Sans" fontsize=14 height=0.72 margin="0.13,0.13" shape=box style="rounded,filled" width=2.4]
+	edge [arrowsize=.75 color="#4B657E" fontname="DejaVu Sans" fontsize=10 penwidth=1.4]
+	0 [label="Задача
+и доступный контекст"]
+	1 [label="LLM выбирает
+химический инструмент"]
+	2 [label="Инструмент возвращает
+структуры / данные"]
+	3 [label="LLM формирует ответ;
+проверка человеком" fillcolor=white style="rounded,dashed"]
+	0 -> 1
+	1 -> 2
+	2 -> 3
+	2 -> 1 [label="Наблюдение инструмента →
+следующий шаг агента" constraint=false style=dashed]
+	label="19. LLM с химическими инструментами: ChemCrow
+Исследовательская архитектура; не формуляционная валидация
+Источники: S30"
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "number": "01",
+    "title": "Экспертная команда: QbD + планирование экспериментов",
+    "scope": "Метод работы; обобщение по ICH Q8",
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "number": "02",
+    "title": "Quotient Sciences: Translational Pharmaceutics / RapidFACT",
+    "scope": "Контрактная услуга; публичное описание поставщика",
+    "sources": [
+      "S23",
+      "S24"
+    ]
+  },
+  {
+    "number": "03",
+    "title": "BASF ZoomLab",
+    "scope": "Цифровой сервис и услуги; публичное описание поставщика",
+    "sources": [
+      "S04"
+    ]
+  },
+  {
+    "number": "04",
+    "title": "FormulationDT",
+    "scope": "Научная платформа; статья 2024/2025",
+    "sources": [
+      "S05",
+      "S06"
+    ]
+  },
+  {
+    "number": "05",
+    "title": "FormulationAI",
+    "scope": "Научная платформа; архитектура публикации 2023/2024",
+    "sources": [
+      "S07",
+      "S08"
+    ]
+  },
+  {
+    "number": "06",
+    "title": "PharmDE → FormulationDE",
+    "scope": "2021: правила; 2026: ML + правила + интерпретация",
+    "sources": [
+      "S09",
+      "S10"
+    ]
+  },
+  {
+    "number": "07",
+    "title": "SwissADME",
+    "scope": "Предварительное молекулярное профилирование",
+    "sources": [
+      "S11"
+    ]
+  },
+  {
+    "number": "08",
+    "title": "ADMETlab 3.0",
+    "scope": "Предикторы ADMET; статья 2024",
+    "sources": [
+      "S12"
+    ]
+  },
+  {
+    "number": "09",
+    "title": "GastroPlus",
+    "scope": "PBPK/PBBM; публичный функциональный процесс",
+    "sources": [
+      "S13",
+      "S34"
+    ]
+  },
+  {
+    "number": "10",
+    "title": "Simcyp Biopharmaceutics",
+    "scope": "Механистическое моделирование и виртуальные популяции",
+    "sources": [
+      "S14",
+      "S35"
+    ]
+  },
+  {
+    "number": "11",
+    "title": "PK-Sim / MoBi / OSP",
+    "scope": "Открытый инструментарий и workflow квалификации",
+    "sources": [
+      "S15",
+      "S16",
+      "S41"
+    ]
+  },
+  {
+    "number": "12",
+    "title": "Intellegens Alchemite",
+    "scope": "ML для экспериментальных составов; заявление поставщика",
+    "sources": [
+      "S17",
+      "S18"
+    ]
+  },
+  {
+    "number": "13",
+    "title": "Intrepid Labs VALIANT",
+    "scope": "Закрытая коммерческая платформа; детали модели не раскрыты",
+    "sources": [
+      "S19"
+    ]
+  },
+  {
+    "number": "14",
+    "title": "Persist AI Suite + Cloud Lab",
+    "scope": "Заявленная связка корпоративных данных, ИИ и лаборатории",
+    "sources": [
+      "S20",
+      "S21",
+      "S38"
+    ]
+  },
+  {
+    "number": "15",
+    "title": "Ros et al.: полуавтономный формулятор",
+    "scope": "Экспериментальное исследование 2025; не готовый SaaS",
+    "sources": [
+      "S22",
+      "S42"
+    ]
+  },
+  {
+    "number": "16",
+    "title": "CCDC CSD-Materials",
+    "scope": "Поддержка выбора твёрдой формы",
+    "sources": [
+      "S25"
+    ]
+  },
+  {
+    "number": "17",
+    "title": "Reaxys: опубликованный и предиктивный ретросинтез",
+    "scope": "Функциональный процесс; обновления марта–мая 2026",
+    "sources": [
+      "S26",
+      "S27"
+    ]
+  },
+  {
+    "number": "18",
+    "title": "AiZynthFinder",
+    "scope": "Открытый алгоритм поиска; архитектура по статье и README",
+    "sources": [
+      "S28",
+      "S29"
+    ]
+  },
+  {
+    "number": "19",
+    "title": "LLM с химическими инструментами: ChemCrow",
+    "scope": "Исследовательская архитектура; не формуляционная валидация",
+    "sources": [
+      "S30"
+    ]
+  },
+  {
+    "number": "20",
+    "title": "TDC + ALCE + предметные тесты",
+    "scope": "Предлагаемый контур сравнения; НЕ коммерческий продукт",
+    "sources": [
+      "S31",
+      "S32",
+      "S33",
+      "S49"
+    ]
+  }
+]

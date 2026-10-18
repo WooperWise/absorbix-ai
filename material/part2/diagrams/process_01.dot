@@ -1,0 +1,22 @@
+digraph solution_01 {
+	bgcolor=white fontcolor="#142D45" fontname="DejaVu Sans" fontsize=18 label="01. Экспертная команда: QbD + планирование экспериментов
+Метод работы; обобщение по ICH Q8" labeljust=l labelloc=t nodesep=0.25 pad=0.25 rankdir=LR ranksep=0.40 splines=polyline
+	node [color="#8799AC" fillcolor="#F2F6FA" fontname="DejaVu Sans" fontsize=14 height=0.72 margin="0.13,0.13" shape=box style="rounded,filled" width=2.4]
+	edge [arrowsize=.75 color="#4B657E" fontname="DejaVu Sans" fontsize=10 penwidth=1.4]
+	0 [label="Цель продукта
+и исходное досье"]
+	1 [label="Экспертные гипотезы
+и план опытов"]
+	2 [label="Изготовление образцов
+и измерения"]
+	3 [label="Оценка качества
+и выбор варианта"]
+	0 -> 1
+	1 -> 2
+	2 -> 3
+	2 -> 1 [label="Обратная связь: уточнение
+факторов и нового плана" constraint=false style=dashed]
+	label="01. Экспертная команда: QbD + планирование экспериментов
+Метод работы; обобщение по ICH Q8
+Источники: S01"
+}

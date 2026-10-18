@@ -1,0 +1,9 @@
+=== Проверка ключа Google AI Studio · 2026-10-18T15:14:13 ===
+google-genai 2.31.0 · pydantic 2.14.1 · python 3.12.3
+
+[OK] ключ в .env: длина 53, префикс AQ.A (не AIza)
+[OK] создание клиента genai.Client: без исключений
+[FAIL] listModels: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+Нет подходящей модели для вызова generateContent
+
+Итог: 2/3 проверок пройдено

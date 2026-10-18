@@ -1,0 +1,15 @@
+.git
+.venv
+.env
+__pycache__
+**/__pycache__
+.pytest_cache
+.mypy_cache
+.ruff_cache
+material
+parts_desc
+AGENTS.md
+DESCR.md
+opencode.json
+*.egg-info
+dist

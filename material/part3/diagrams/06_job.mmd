@@ -1,0 +1,16 @@
+sequenceDiagram
+  participant U as UI / клиент
+  participant A as Backend
+  participant D as PostgreSQL
+  participant W as Worker
+  participant T as Инструмент
+  U->>A: Запуск для CaseRevision + idempotency key
+  A->>D: В одной транзакции сохранить Run и Job
+  A-->>U: 202 Accepted + run_id
+  W->>D: Короткая блокировка, lease, fencing token
+  W->>T: Выполнение с закреплёнными входами
+  T-->>W: Результат / ошибка / неизвестный исход
+  W->>W: Проверить схему и сохранить артефакт
+  W->>D: Commit при актуальном lease
+  U->>A: Получить состояние Run
+  A-->>U: Технический статус отдельно от научного вывода

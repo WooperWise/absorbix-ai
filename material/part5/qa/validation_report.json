@@ -1,0 +1,247 @@
+{
+  "validation_kind": "offline_artifact_integrity_and_scorer_unit_tests",
+  "checks_run": 58,
+  "checks_passed": 58,
+  "errors": [],
+  "checks": [
+    {
+      "check": "160 main cases",
+      "passed": true
+    },
+    {
+      "check": "20 unique groups",
+      "passed": true
+    },
+    {
+      "check": "160 unique IDs",
+      "passed": true
+    },
+    {
+      "check": "gold exact IDs",
+      "passed": true
+    },
+    {
+      "check": "JSON and JSONL equal",
+      "passed": true
+    },
+    {
+      "check": "pipeline_input.schema.json validation",
+      "passed": true
+    },
+    {
+      "check": "stage3/observation.schema.json validation",
+      "passed": true
+    },
+    {
+      "check": "all source_refs resolve",
+      "passed": true
+    },
+    {
+      "check": "all card_refs resolve",
+      "passed": true
+    },
+    {
+      "check": "all observation_refs resolve",
+      "passed": true
+    },
+    {
+      "check": "all gold fact refs resolve",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A01",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A02",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A03",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A04",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A05",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A06",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A07",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A08",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A09",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A10",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A11",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A12",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A13",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A14",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A15",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A16",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A17",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A18",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A19",
+      "passed": true
+    },
+    {
+      "check": "card hash card:A20",
+      "passed": true
+    },
+    {
+      "check": "card hash card:D10",
+      "passed": true
+    },
+    {
+      "check": "card hash card:D14",
+      "passed": true
+    },
+    {
+      "check": "card hash card:D13",
+      "passed": true
+    },
+    {
+      "check": "card hash card:P03",
+      "passed": true
+    },
+    {
+      "check": "observation locator A02.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A05.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A06.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A07.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A07.N2",
+      "passed": true
+    },
+    {
+      "check": "observation locator A08.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A09.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A12.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A15.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A16.N1",
+      "passed": true
+    },
+    {
+      "check": "observation locator A16.N2",
+      "passed": true
+    },
+    {
+      "check": "observation locator A19.N1",
+      "passed": true
+    },
+    {
+      "check": "splits cover all cases",
+      "passed": true
+    },
+    {
+      "check": "no group overlap",
+      "passed": true
+    },
+    {
+      "check": "all cases explicitly synthetic",
+      "passed": true
+    },
+    {
+      "check": "all oracles draft",
+      "passed": true
+    },
+    {
+      "check": "75 public rows and 59/16 labels",
+      "passed": true
+    },
+    {
+      "check": "preserve row72 role flag",
+      "passed": true
+    },
+    {
+      "check": "24 contract tests",
+      "passed": true
+    },
+    {
+      "check": "loader excludes gold/example keys",
+      "passed": true
+    },
+    {
+      "check": "scorer accepts matching formal fixture only",
+      "passed": true
+    },
+    {
+      "check": "scorer rejects fabricated new-form number",
+      "passed": true
+    },
+    {
+      "check": "scorer detects missing warnings",
+      "passed": true
+    }
+  ],
+  "not_tested": [
+    "actual_user_repository",
+    "actual_LLM_answers",
+    "scientific_expert_agreement",
+    "external_API_success",
+    "clinical_or_laboratory_effect"
+  ]
+}

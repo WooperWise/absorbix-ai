@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pharma-diploma:candidate-assessment:1.0.0",
+  "title": "candidate-assessment",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "assessment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workspace_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "strategy_definition_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rule_kind": {
+            "type": "string",
+            "enum": [
+              "user_requirement",
+              "regulatory_context",
+              "precedent_screen",
+              "model_flag",
+              "formulation_evidence"
+            ]
+          },
+          "rule_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "constraint_level": {
+            "type": "string",
+            "enum": [
+              "hard",
+              "advisory"
+            ]
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "met",
+              "violated",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "check_id",
+          "rule_kind",
+          "rule_ref",
+          "constraint_level",
+          "verdict",
+          "rationale",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "eligibility": {
+      "type": "string",
+      "enum": [
+        "eligible_for_review",
+        "conditional",
+        "ineligible",
+        "insufficient_data"
+      ]
+    },
+    "expected_effect": {
+      "type": "object",
+      "properties": {
+        "endpoint": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_quantified",
+            "quantified_prediction",
+            "observed_comparison"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basis_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "endpoint",
+        "status",
+        "description",
+        "basis_refs"
+      ],
+      "additionalProperties": false
+    },
+    "next_checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "schema_version",
+    "assessment_id",
+    "workspace_id",
+    "case_revision_id",
+    "candidate_revision_id",
+    "strategy_definition_ref",
+    "checks",
+    "eligibility",
+    "expected_effect",
+    "next_checks",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
